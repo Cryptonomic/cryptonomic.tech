@@ -1,0 +1,395 @@
+/* -----------------------------------------
+# Home General
+------------------------------------------*/
+.three-dot {
+    height: 50px;
+    margin-top: 7vh;
+}
+
+.parallel-three-dot {
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.parallel-three-dot-right {
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.parallel-three-dot-left {
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.divider {
+    position: absolute;
+    height: 3px;
+    width: 90vw;
+    background-color: #57565a;
+    bottom: 60px;
+    margin-left: 4.3vw;
+}
+/* -----------------------------------------
+# What we do and Passion section
+------------------------------------------*/
+.tezos,
+.what {
+    border-top: 3px solid #57565a;
+    border-bottom: 3px solid #57565a;
+    height: 100%;
+}
+
+
+#about {
+    background: url(../img/coner-dark.png) left bottom, url(../img/coner-gray.png) left bottom, #2d2c31;
+    background-repeat: no-repeat, no-repeat;
+    background-size:  35vw 80vh, 70vw 110vh;
+    height: 100vh;
+}
+
+#passion {
+    background: url(../img/workers.png) right bottom ;
+    background-repeat: no-repeat, no-repeat;
+    background-size:  50vw 90vh;
+    height: 100vh;
+    position: relative;
+}
+
+#touch {
+    background: url(../img/banner_background.png) center center ;
+    background-repeat: no-repeat, no-repeat;
+    background-size:  100vw 100vh;
+    height: 100vh;
+}
+
+#video {
+    height: 100vh;
+    background-color: #2d2c31;
+}
+
+#passion-before {    
+    width: 100vw;
+    z-index: -1;
+    height: 100vh;
+    background: url(../img/coner-dark-right.png) right bottom;
+    background-repeat: no-repeat;
+    background-size:  100vw 70vh;
+    position: absolute;
+}
+
+.match {
+    z-index:2000;
+}
+
+
+/* -----------------------------------------
+# Who are we section
+------------------------------------------*/
+
+
+#who {
+    background: url(../img/right_octo.png) left center, url(../img/octo-background.png) center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size:  40vw 40vw,100vw 100vh;
+    height: 100vh;
+}
+
+#hero-before:before {
+    content: "";
+    background: #2d2c31;
+    background: url(../img/octo.png) right bottom,  url(../img/top_article.png) left bottom, url(../img/engineers.png) left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 35vw 35vw,100vw 85vh, 35vw 35vw;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.content {
+    padding: 20px 20px;
+}
+
+
+.miner-img {
+    height: 100%;
+    background: url(../img/minner.png) 70% center ;
+    background-repeat: no-repeat;
+    background-size: 20vw 40vw
+}
+
+
+/* -----------------------------------------
+# Contact section
+------------------------------------------*/
+
+
+
+#title {
+    background-image: linear-gradient(90deg, rgba(253,211,0,1) 0%, rgba(239,3,145,1) 33%, rgba(239,3,145,1) 66%, rgba(7,249,249,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 100%;
+    transition: background-size 200ms ease-in;
+}
+
+.title {
+    width: fit-content;
+    width: -moz-fit-content;
+    font-size: 50px;
+    color: white;
+    font-family: 'europa_bold';
+}
+
+.email-title {
+    font-size: 35px;
+}
+
+.about-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+.toggle-menu-bottom-top {
+    margin-top: 7px !important;
+}
+
+/* -----------------------------------------
+# Video section
+------------------------------------------*/
+
+.video-section {
+    position: relative;
+}
+
+#playVideo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    position: absolute;
+    background:url(../img/play.png) no-repeat ;
+    cursor:pointer;
+    border:none;
+    width:100px;
+    height:100px;
+}
+
+.col>a>i {
+    font-size: 25px;
+    color: white;
+}
+
+.cib-riot {
+    font-size: 1.3em !important;
+}
+
+.link {
+    padding-top: 10px !important;
+    min-width: 205px;
+}
+
+
+h1, p {
+    font-family: 'europa_bold';
+}
+
+@media (max-width: 1024px) {
+    .miner-img {
+        height: 52%;
+        background: url(../img/minner.png) 70% center;
+        background-repeat: no-repeat;
+        background-size: 20vw 40vw;
+    }
+
+    #hero-before:before {
+        background: #2d2c31;
+        background: url(../img/octo.png) right bottom,  url(../img/top_article.png) left bottom, url(../img/engineers.png) left;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 40vh 40vh,100vw 85vh, 40vh 40vh;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #who {
+        background: url(../img/right_octo.png) left center, url(../img/octo-background.png) center center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 66vw 71vw,100vw 100vh;
+        height: 100vh;
+    }
+
+    p {
+        font-size: 25px;
+    } 
+    
+    
+    #hero h1 {
+        font-size: 3vh;
+        /* line-height: 28px; */
+    }
+
+    .passion-blank,
+    .who-blank {
+        display: none;
+    }
+}
+
+@media (max-width: 990px) {
+    .link {
+        padding-top: 5px !important;
+        min-width: 205px;
+    }
+    .miner-img {
+        height: 50%;
+        background: url(../img/minner.png) center center ;
+        background-repeat: no-repeat;
+        background-size: 30vw 40vw
+    }
+
+    #who {
+        background: url(../img/right_octo.png) left center, url(../img/octo-background.png) center center;
+        background-repeat: no-repeat, no-repeat;
+        background-size:  70vw 70vw,100vw 100vw;
+        height: 100vh;
+    }
+
+    .passion-blank,
+    .who-blank {
+        display: none;
+    }
+
+    #passion {
+        background: url(../img/workers.png) right bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100vw 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    .email-title {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 414px) {
+    .banner-logo {
+        width: 50vw;
+    }
+
+    h1 {
+        font-size: 3vh;
+    }
+
+    .title {
+        font-size: 3vh;
+    }
+
+    .parallel-three-dot {
+        display: none;
+    }
+
+    p{
+        font-size: 2vh;
+    }
+
+    .miner-img {
+        height: 50%;
+        background: url(../img/minner.png) 70% center center ;
+        background-repeat: no-repeat;
+        background-size: 31vw 49vw
+    }
+    
+    .passion-blank,
+    .who-blank {
+        display: none;
+    }
+
+    #who {
+        background: url(../img/right_octo.png) left center, url(../img/octo-background.png) center center;
+        background-repeat: no-repeat, no-repeat;
+        background-size:  100vw 100vw,100vw 100vh;
+        height: 100vh;
+    }
+
+    #passion {
+        background: url(../img/workers.png) right center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100vw 100vw;
+        height: 100vh;
+        position: relative;
+    }
+    .hidden-part {
+        display: none;
+    }
+
+    .email-title {
+        font-size: 17px;
+    }
+
+    .touch-txt {
+        line-height: 0;
+    }
+
+    .toggle-menu-bottom-top {
+        margin-top: 10px !important;
+    }
+
+    .main-title,
+    #main-title {
+        font-size: 23px !important;
+    }
+
+    .three-dot {
+        height: 40px;
+    }
+
+    #hero h1 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 320px) {
+    .email-title {
+        font-size: 15px;
+    }
+    
+    .user-name-section{
+        padding-top: 0px !important;
+    }
+
+    .contact-title {
+        height: 10px !important;
+    }
+
+    #defaultRegisterFormFirstName,
+    #defaultRegisterFormLastName,
+    #exampleInputPassword1 {
+        height: 25px !important;
+    }
+
+    .main-title,
+    #main-title {
+        font-size: 20px !important;
+    }
+
+    .three-dot {
+        height: 30px;
+    }
+
+    #hero h1 {
+        font-size: 28px;
+        line-height: 22px;
+    }
+
+
+}
