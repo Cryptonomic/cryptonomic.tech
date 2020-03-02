@@ -2,7 +2,10 @@
     display: flex;
     width: 100%;
     height: 100vh;
+    min-height: 900px;
+    /* height: fit-content; */
     background: url(../img/contact/contact_background.png) top center;
+    background-size: cover;
   }
 .content {
     display: flex;
@@ -12,11 +15,12 @@
     justify-content: center;
     border-bottom: 3px solid #57565a;
     margin-bottom: 20px;
+    margin-top: -3vh;
  }
  .large_text {
     display: flex;
     font-family: 'europa_bold';
-    font-size: 36px;
+    font-size: 26px;
     color: white;
     font-weight: bolder;
     position: relative;
@@ -43,7 +47,8 @@
     font-size: 48px;
     font-weight: bold;
     position: relative;
-    margin-top: -20px;
+    margin-top: -30px;
+    /* margin-top: -20px; */
 }
 .underline {
     background-image: linear-gradient(90deg, rgba(253,211,0,1) 0%,  rgba(239,3,145,1) 33%, rgba(239,3,145,1) 66%, rgba(7,249,249,1) 100%);
@@ -89,8 +94,10 @@ a:focus {
 form {
     font-family: 'europa_bold';
 }
-
-@media (max-width:1680px) {
+.submit {
+    margin-top: 30px;
+}
+/* @media (max-width:1680px) {
     .large_text {
         display: flex;
         font-family: europa, sans-serif;
@@ -98,9 +105,12 @@ form {
         color: white;
         font-weight: bolder;
         position: relative;
-        margin-top: 5vh;
+        margin-top: 3vh;
     }
-}
+    .content {
+        margin-top: 1vh;
+    }
+} */
 @media (max-width:1200px) {
     .margin_custom_right_other {
         margin-top: 1vh;
@@ -115,15 +125,50 @@ form {
     .margin_custom_right {
         margin-left: -1vw;
     }
+    .large_text {
+        margin-top: 1vh;
+    }
+    .content {
+        margin-top: 50px;
+     }
+     .submit {
+        margin-top: 10px;
+    }
 }
 @media (max-width:1024px) {
+    .margin_custom_left {
+        margin-top: -2vh;
+    }
+    .margin_custom_right_other {
+        margin-top: -20vh;
+    }
+    #contact {
+        display: flex;
+        width: 100%;
+        min-height: 1366px;
+        height: fit-content;
+        background: url(../img/contact/contact_background.png) top center;
+        background-size: cover;
+    }
+    .margin_custom_right {
+        margin-left: -1vw;
+    }
+    .content {
+        margin-top: 50px;
+     }
+     .submit {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:768px) {
     .margin_custom_right_other {
         margin-top: 0vh;
     }
     #contact {
         display: flex;
         width: 100%;
-        min-height: 1366px;
+        min-height: 1024px;
         /* height: fit-content; */
         background: url(../img/contact/contact_background.png) top center;
         background-size: cover;
@@ -131,11 +176,15 @@ form {
     .margin_custom_right {
         margin-left: -1vw;
     }
+    .submit {
+        margin-top: 20px;
+    }
 }
 @media (max-width: 414px) {
 
     .large_text {
         font-size: 21px;
+        margin-top: 20px;
     }
     .margin_custom_right_other {
         margin-top: 0vh;
@@ -158,7 +207,6 @@ form {
         font-size: 20px;
     }
     .submit {
-        width: 150px;
-        height: 50px;
+        margin-top: 20px;
     }
 }
