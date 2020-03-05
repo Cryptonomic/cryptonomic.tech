@@ -121,6 +121,12 @@
 .row .link {
     position: absolute;
     bottom:0;
+    left: 2vw;
+}
+
+.right>.link {
+    position: absolute;
+    bottom:0;
     left: 6vw;
 }
 
