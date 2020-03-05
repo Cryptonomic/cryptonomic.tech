@@ -96,6 +96,7 @@ form {
 }
 .submit {
     margin-top: 30px;
+    letter-spacing: 1px;
 }
 /* @media (max-width:1680px) {
     .large_text {
