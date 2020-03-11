@@ -154,7 +154,7 @@
     }
     .galleon {
         height: fit-content;
-        padding: 100px 5vw 100px 5vw;
+        padding: 157px 5vw 100px 5vw;
     }
     .first {
         padding-right: 1.5vw !important;
@@ -193,6 +193,11 @@
         height: 200px;
         width: 100%;
 
+    }
+
+    .galleon {
+        height: fit-content;
+        padding: 100px 5vw 100px 5vw;
     }
 
     .first {

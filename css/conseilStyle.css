@@ -215,7 +215,7 @@ a {
 
     .galleon {
         height: 100vh;
-        padding: 70px 5vw 100px 5vw;
+        padding: 100px 5vw 100px 5vw;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -298,7 +298,7 @@ a {
 
     .galleon {
         height: fit-content;
-        padding: 70px 5vw 100px 5vw;
+        padding: 100px 5vw 100px 5vw;
         display: flex;
         align-items: center;
         justify-content: center;

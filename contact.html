@@ -54,9 +54,9 @@
           <li><a href="./developers.html">Developers</a></li>
           <li><a href="./tezos.html">Tezos</a></li>
           <li><a href="./usertools.html">User Tools</a></li>
-          <li><a href="./galleon.html">Galleon</a></li> 
-          <li><a href="./conseil.html">Conseil</a></li> 
-          <li><a href="./conseiljs.html">ConseilJS</a></li>
+          <!-- <li><a href="./galleon.html">Galleon</a></li>  -->
+          <!-- <li><a href="./conseil.html">Conseil</a></li> 
+          <li><a href="./conseiljs.html">ConseilJS</a></li> -->
           <li><a href="./support.html">Support</a></li>      
           <li><a href="./training.html">Training</a></li> 
           <li class="menu-active"><a href="./contact.html">Contact</a></li>
@@ -67,64 +67,41 @@
 
   <main id="main">
     <section id="contact">
-      <div class="content">        
-        <div class="row about-container ">
-          <div class="col-xl-8 margin_custom_left"> 
-            <div class="col-xl-12">
-              <div class="row">
+      <div class="content d-flex justify-content-between"> 
+          <div class="row">
+            <div class="col-xl-12">             
                   <div class = "contact_text underline">
                     Contact
                   </div>
-              </div>    
-              <p class = "normal_text margin_custom_left_other">For technical support, please visit our ZenDesk support portal.</p>
-              <p class = "normal_text margin_custom_left_other">For all other inquiries, please use this form:</p>  
-            </div>           
-            <form action="#">
-              <div class="form-row mb-4">
-                <div class="col-sm-5 pt-4">
-                    <!-- your name -->
-                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Your Name">
-                </div>
-                <div class="col-sm-7 pt-4">
-                    <!-- email -->
-                    <input type="email" id="defaultRegisterFormLastName" class="form-control" placeholder="Your Email">
-                </div>
-              </div>
-              <div class="form-group">
-                <!-- Subject -->
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <!-- Comment -->
-                <textarea class="form-control mt-4" id="exampleFormControlTextarea1" rows="3" placeholder="Your comment"></textarea>
-              </div>
-              <div class="d-flex justify-content-start">
-                <button class="btn view_tutorial submit">Submit</button>
-              </div>
-            </form>
+              <p class = "normal_text ">For technical support, please consult our FAQ and visit our ZenDesk support portal.</p>
+              <p class = "normal_text">For all other inquiries, please contact us at info@cryptonomic.tech</p>    
             
+            </div>            
           </div>
-          <div class="col-xl-4 margin_custom_right_other">
-              <p class="large_text margin_custom_right">support@cryptonomic.tech</p>
+          <div class="row">
+            <div class="col-xl-12"> 
               <div class="margin_custom_right">
                 <a href="#" class="mx-2" role="button"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
                 <a href="#" class="mx-2" role="button"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                 <a href="#" class="mx-2" role="button"><i class="cib-riot"></i></a>
-                <a href="#" class="mx-2" role="button"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a>
+                <a href="#" class="mx-2" role="button"><img src='./img/m_icon.svg' class="m_icon" aria-hidden="true" /></a>
               </div>
               <br>
-              <p class = "support_normal_text margin_custom_right">100 Bogart Street, Brooklyn, NY 11206</p>
+              <p class = "support_normal_text margin_custom_right">100 Bogart Street, Brooklyn, NY 11206</p>            
+            </div>
           </div>
-          
-        </div>
+
+       
       </div>
     </section>
   </main>
 
   <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script> 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="js/main.js"></script>
 
 </body>

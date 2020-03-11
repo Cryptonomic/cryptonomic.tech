@@ -13,6 +13,7 @@
 .tezos {
     border-bottom: 3px solid #57565a;
     height: 100%;
+    padding-top: 30px;
 }
 
 #hero-before:before {
@@ -144,7 +145,7 @@
 
     .tezos {
         height: fit-content;
-        padding-top: 29px;
+        padding-top: 50px;
     }
 
     #about .about-container p {

@@ -6,11 +6,7 @@
     padding-top: 135px;
     height: 100%;
 }
-a {
-    color: white;
-    font-family: 'europa_bold';
-    text-decoration: underline;
-}
+
 a:hover {
     color: white;
 }
@@ -117,7 +113,7 @@ a:focus {
     } */
     .galleon {
         min-height: 1366px !important;
-        padding: 100px 5vw 100px 5vw;
+        padding: 0 5vw 100px 5vw;
     }
     .skills {
         margin-top: 100px;
@@ -138,6 +134,13 @@ a:focus {
     }
 }
 
+@media (max-width:1024px) {
+    .galleon {
+        min-height: 1366px !important;
+        padding: 0 5vw 100px 5vw;
+    }
+}
+
 @media (max-width:992px) and (min-width:768px) {
     .skills:nth-child(3) {
         border-width: 0;
@@ -155,6 +158,10 @@ a:focus {
     }
     .skills:nth-child(3) {
         border-right: 2px solid #57565a !important;
+    }
+    .galleon {
+        min-height: 1366px !important;
+        padding: 100px 5vw 100px 10vw;
     }
 }
 
