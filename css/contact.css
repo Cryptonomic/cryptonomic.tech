@@ -17,18 +17,8 @@
     margin-top: 3vh;
  }
 
-.normal_text{
-    display: flex;
-    font-family: 'europa_bold';
-    font-size: 20px;
-    color: white;
-}
-.support_normal_text{
-    display: flex;
-    font-family: 'europa_light';
-    font-size: 20px;
-    color: white;
-}
+
+
 
 .contact_text {
     font-family: 'europa_bold';
@@ -66,12 +56,5 @@
 @media (max-width: 414px) {
     .contact_text {
         font-size: 40px;
-    }
-
-    .normal_text{
-        font-size: 20px;
-    }
-    .support_normal_text{
-        font-size: 20px;
     }
 }

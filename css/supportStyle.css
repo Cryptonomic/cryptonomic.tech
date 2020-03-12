@@ -171,10 +171,6 @@
         line-height: 57px;
     }
 
-    h4 {
-        font-size: 25px !important;
-    }
-
     .row .title>h4 {
         font-size: 35px !important;
     }
@@ -235,10 +231,6 @@
 
     .banner-logo {
         height: 200px;
-    }
-
-    h4 {
-        font-size: 20px !important;
     }
 
     .row .link>a, .first {

@@ -197,7 +197,9 @@
 
 
 h1, p {
-    font-family: 'europa_bold';
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400
 }
 
 @media (max-width: 1024px) {
@@ -232,9 +234,11 @@ h1, p {
         height: 100vh;
     }
 
-    p {
-        font-size: 25px;
-    } 
+    h1, p {
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 400
+    }
     
     
     #hero h1 {
@@ -301,8 +305,10 @@ h1, p {
         width: 50vw;
     }
 
-    h1 {
-        font-size: 3vh;
+    h1, p {
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 400
     }
 
     .title {
@@ -313,9 +319,7 @@ h1, p {
         display: none;
     }
 
-    p{
-        font-size: 2vh;
-    }
+
 
     .miner-img {
         height: 50%;
