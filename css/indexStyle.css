@@ -27,7 +27,8 @@
     width: 90vw;
     background-color: #57565a;
     bottom: 60px;
-    margin-left: 4.3vw;
+    margin-left: 5vw;
+    /* margin-left: 4.3vw; */
 }
 /* -----------------------------------------
 # What we do and Passion section
@@ -68,7 +69,7 @@
 }
 
 #passion-before {    
-    width: 100vw;
+    /* width: 100vw; */
     z-index: -1;
     height: 100vh;
     background: url(../img/coner-dark-right.png) right bottom;

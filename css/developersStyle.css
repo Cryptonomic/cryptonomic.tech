@@ -156,9 +156,6 @@ a:focus {
     .skills:nth-child(2n) {
         border-width: 0 !important;
     }
-    .skills:nth-child(3) {
-        border-right: 2px solid #57565a !important;
-    }
     .galleon {
         min-height: 1366px !important;
         padding: 100px 5vw 100px 10vw;
