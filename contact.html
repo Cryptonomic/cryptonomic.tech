@@ -26,9 +26,6 @@
   <link href="css/indexStyle.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@1.0.0/css/brand.min.css">
 
-     
-
-
   <!-- =======================================================
     Theme Name: Regna
     Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
@@ -77,6 +74,7 @@
         <p class = "normal_text">For all other inquiries, please contact us at info@cryptonomic.tech</p> 
         <p class = "support_normal_text margin_custom_right"><img src="./img/location_icon.svg" class="location_icon"/> 100 Bogart Street, Brooklyn, NY 11206</p> 
         <div id="map"></div>
+
         <div class="bottom-link">
           <a href="#" class="mx-2" role="button"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
           <a href="#" class="mx-2" role="button"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
@@ -93,8 +91,7 @@
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script> 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="js/main.js"></script>
-  <script>   
-
+  <script>
     function initMap() {
       var label = 'Cryptonomic Inc';
       var position = {lat: 40.707272, lng: -73.933594};
@@ -135,15 +132,12 @@
       marker.addListener('click', function() {
         infowindow.open(map, marker);
       });
-
-      
     }
 
   </script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvn6N_9AZXiYeZTAYgsRnGHPvYW5g9ar0&callback=initMap">
   </script>
-
 
 </body>
 </html>
