@@ -103,7 +103,7 @@
 .row>.arronax {
     width: 100%;
     /* height: 13vw; */
-    background-color: #57565a;
+    height: fit-content;
 }
 
 .banner-logo {
@@ -317,8 +317,6 @@
 
     .row>.arronax {
         width: 100%;
-        height: 25vh;
-        background-color: #57565a;
     }
 
 }
