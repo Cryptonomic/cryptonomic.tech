@@ -59,3 +59,8 @@ p {
     background-position: 0 88%;
     transition: background-size 200ms ease-in;
 }
+
+#map {
+    height: 450px;
+    width: 600px;
+} 
