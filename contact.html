@@ -73,24 +73,10 @@
         <div class="d-flex">
           <p class="large_text underline">Contact</p>
         </div>
-
         <p class = "normal_text ">For technical support, please consult our FAQ and visit our ZenDesk support portal.</p>
         <p class = "normal_text">For all other inquiries, please contact us at info@cryptonomic.tech</p> 
-        <p class = "support_normal_text margin_custom_right"><img src="https://img.icons8.com/ios/15/ffffff/marker.png"/> 100 Bogart Street, Brooklyn, NY 11206</p> 
-
-        <iframe
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAvn6N_9AZXiYeZTAYgsRnGHPvYW5g9ar0&q=100+Bogart+St,Brooklyn,NY+11206&zoom=13" 
-          width="600" 
-          height="450" 
-          frameborder="0"
-          style="border:0;" 
-          allowfullscreen="" 
-          aria-hidden="false" 
-          tabindex="0">
-        </iframe>
-        
-        
-
+        <p class = "support_normal_text margin_custom_right"><img src="./img/location_icon.svg" class="location_icon"/> 100 Bogart Street, Brooklyn, NY 11206</p> 
+        <div id="map"></div>
         <div class="bottom-link">
           <a href="#" class="mx-2" role="button"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
           <a href="#" class="mx-2" role="button"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
@@ -107,6 +93,56 @@
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script> 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="js/main.js"></script>
+  <script>   
+
+    function initMap() {
+      var label = 'Cryptonomic Inc';
+      var position = {lat: 40.707272, lng: -73.933594};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: position,       
+        mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                    'styled_map']
+          }
+      });
+
+      var contentString = '<div id="content" style="color:black;">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">Cryptonomic Inc</h1>'+
+          '<div id="bodyContent">'+
+          '<p><b>Address:</b>'+
+          '100 Bogart St, Brooklyn, NY 11206</p>'+         
+          '</div>'+
+          '</div>';
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+
+      var marker = new google.maps.Marker({
+        position: position,
+        label: {
+          text: label,
+          color: 'gray',
+          fontSize: "18px"
+        },
+        map: map,
+        title: 'Cryptonomic Inc'
+      });      
+
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
+
+      
+    }
+
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvn6N_9AZXiYeZTAYgsRnGHPvYW5g9ar0&callback=initMap">
+  </script>
 
 
 </body>
