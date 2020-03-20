@@ -12,9 +12,12 @@
 }
 
 .tezos {
+    width: 90%;
+    margin-left: 5%;
     border-bottom: 3px solid #57565a;
-    height: 100%;
-    padding-top: 30px;
+    position: relative;
+    padding: 150px 0 55px 0;
+    min-height: calc(100vh - 60px);
 }
 
 #hero-before:before {

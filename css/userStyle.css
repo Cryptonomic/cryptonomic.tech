@@ -16,8 +16,12 @@
 }
 
 .usertool {
-    height: 100%;
-    padding: 100px 5vw 100px 5vw;
+    width: 90%;
+    margin-left: 5%;
+    border-bottom: 3px solid #57565a;
+    position: relative;
+    padding: 150px 0 55px 0;
+    min-height: calc(100vh - 60px);
 }
 #hero {
     overflow: hidden;

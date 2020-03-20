@@ -53,3 +53,18 @@ jQuery(document).ready(function ($) {
     $("#mobile-nav, #mobile-nav-toggle").hide();
   }
 });
+
+
+const JsonLinks = {
+  ConseilJS: 'conseiljs.html',
+  Nautilus_Cloud: 'https://nautilus.cloud/',
+  ConseilPy: 'https://github.com/baking-bad/conseilpy',
+  Conseil: 'conseil.html',
+  TezosKit: 'https://github.com/keefertaylor/TezosKit',
+  Electron: 'https://www.electronjs.org/',
+  React: 'https://reactjs.org/'
+}
+
+function goto (key) {
+  window.location.href = JsonLinks[key]
+}

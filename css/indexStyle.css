@@ -34,12 +34,20 @@
 # What we do and Passion section
 ------------------------------------------*/
 .tezos,
-.what {
+/* .what {
     border-top: 3px solid #57565a;
     border-bottom: 3px solid #57565a;
     height: 100%;
+} */
+.what {
+    width: 90%;
+    margin-left: 5%;
+    border-bottom: 3px solid #57565a;
+    position: relative;
+    padding: 200px 0 55px 0;
+    min-height: calc(100vh - 60px);
+    bottom: 60px;
 }
-
 
 #about {
     background: url(../img/coner-dark.png) left bottom, url(../img/coner-gray.png) left bottom, #2d2c31;

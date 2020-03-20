@@ -42,16 +42,12 @@
 }
 
 .galleon {
-    height: 100%;
-    padding: 40px 5vw 100px 5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    background-color: #302f35;
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    padding: 250px 0 55px 0;
+    min-height: calc(100vh - 60px);
 }
-
 
 /* --------------------------------------------
 # Galleon section
@@ -60,11 +56,6 @@
 .row .h-100 {
     justify-content: space-around;
     align-items: center;
-}
-
-.usertool {
-    height: 100%;
-    padding: 100px 5vw 100px 5vw;
 }
 
 
@@ -81,21 +72,10 @@
     right: 0;
 }
 
-#heros {
-    height: fit-content;
-}
-#hero:before {  
-    content: "";
-    background: #2d2c31;
+#hero:before {
     background: url(../img/article_bottom.png) right bottom;
-    background-repeat: no-repeat;
     background-size: 78vw 101vh;
-    position: absolute;
-    opacity: 0.7;
     bottom: -121px;
-    top: 0;
-    left: 0;
-    right: 0;
   }
 
 .banner-logo {
@@ -138,14 +118,11 @@
 # Support section
 ---------------------------------------------*/
 .support {
-    height: fit-content;
-    padding: 40px 5vw 100px 5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    background-color: #302f35;
+    width: 90%;
+    margin-left: 5%;
+    border-bottom: 3px solid #57565a;
+    position: relative;
+    padding: 200px 0 55px 0;
 }
 
 .bottom-link-galleon>a>i,
@@ -158,21 +135,12 @@
 .margin_custom_right>a {
   text-decoration: none !important;
 }
-.bottom-link-galleon {
-    position: absolute;
-    left: 5vw;
-}
 
 
 @media (max-width: 1200px) {  
-    #heros, 
-    #hero {
-        height: fit-content;
-    }
-    .galleon {
-        height: fit-content;
-        padding: 157px 5vw 100px 5vw;
-    }
+    /* .galleon {
+        padding: 10px 5vw 100px 5vw;
+    } */
     .first {
         padding-right: 1.5vw !important;
         padding-left: 1.5vw !important;
@@ -190,6 +158,9 @@
 }
 
 @media (max-width: 1024px) {
+    .support {
+        padding: 100px 0 55px 0;
+    }
     .tutorial {
         padding: 10px 5vw 100px 5vw;
     }
@@ -198,7 +169,11 @@
     }
 }
 
-
+@media (max-width: 768px) {
+    .galleon {
+        padding: 150px 5vw 100px 5vw;
+    }
+}
 
 @media (max-width: 414px) {
     iframe {
