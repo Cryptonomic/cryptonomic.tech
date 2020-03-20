@@ -40,14 +40,12 @@
 }
 
 .galleon {
-    height: 100%;
-    padding: 40px 5vw 100px 5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    background-color: #302f35;
+    width: 90%;
+    margin-left: 5%;
+    border-bottom: 3px solid #57565a;
+    position: relative;
+    padding: 150px 0 55px 0;
+    min-height: calc(100vh - 60px);
 }
 
 
@@ -186,7 +184,7 @@ a {
     }
     .galleon {
         height: fit-content;
-        padding: 100px 5vw 100px 5vw;
+        padding: 150px 5vw 100px 5vw;
     }
     .first {
         padding-right: 1.5vw !important;
@@ -214,14 +212,8 @@ a {
     }
 
     .galleon {
-        height: 100vh;
-        padding: 100px 5vw 100px 5vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        background-color: #302f35;
+        height: fit-content;
+        padding: 150px 5vw 100px 5vw;
     }
 
     #hero-before:before {

@@ -16,8 +16,12 @@
 }
 
 .usertool {
-    height: 100%;
-    padding: 100px 5vw 100px 5vw;
+    width: 90%;
+    margin-left: 5%;
+    border-bottom: 3px solid #57565a;
+    position: relative;
+    padding: 200px 0 55px 0;
+    min-height: calc(100vh - 60px);
 }
 
 #hero {
@@ -132,7 +136,6 @@
     text-decoration: underline;
 }
 
-
 @media (max-width: 1200px) {   
     #hero {
         width: 100%;
@@ -167,6 +170,9 @@
 }
 
 @media (max-width: 1024px) {
+    .usertool {
+        padding-top: 15vh;
+    }
     #hero h1 {
         font-size: 50px;
         line-height: 57px;
