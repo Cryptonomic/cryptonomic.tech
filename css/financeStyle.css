@@ -1,19 +1,6 @@
 /* -----------------------------------------
 # Finance page
 ------------------------------------------*/
-.header-container {
-    padding-top: 10px;
-    border-top: 3px solid #57565a;
-    padding-left: 0;
-    padding-right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.logo {
-    width: 120px;
-}
 
 .row {
     margin-right: 0;
