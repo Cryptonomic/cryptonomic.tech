@@ -43,7 +43,7 @@ body {
 }
 
 .view_tutorial,
-.download,
+.view-download,
 .view_tutorial,
 .send-message,
 .view_tutorial {
@@ -54,8 +54,24 @@ body {
   background: linear-gradient(90deg, rgba(80,163,222,1) 0%, rgba(242,4,143,1) 49%, rgba(253,127,47,1) 100%);
 }
 
+.filler-btn {
+  color: white;
+  border-radius: 0 !important;
+  padding: 10px 35px 10px 35px;
+  width: 100%;
+  font-family: "Avenir", sans-serif;
+  background: transparent;
+  border-image: linear-gradient(90deg, #70E2FF 0%, #F10E8A 40.99%, #FF35A7 63.65%, #FCBF0F 100%) 1;
+  transition: 1s !important;
+}
+
+.filler-btn:hover {
+  background: linear-gradient(90deg, #70E2FF 0%, #F10E8A 40.99%, #FF35A7 63.65%, #FCBF0F 100%);
+}
+
 .view_tutorial:active,
-.download:active,
+.view-download:active,
+.filler-btn:active,
 .view_tutorial:active,
 .send-message:active,
 .view_tutorial:active {
@@ -71,7 +87,8 @@ body {
 }
 
 .view_tutorial:focus,
-.download:focus,
+.view-download:focus,
+.filler-btn:focus,
 .view_tutorial:focus,
 .send-message:focus,
 .view_tutorial:focus {
@@ -116,8 +133,9 @@ a:focus {
 }
 
 p {
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Avenir", sans-serif;
+  font-size: 16px;
   font-weight: 400
 }
 
@@ -177,7 +195,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Avenir", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -248,7 +267,8 @@ h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Avenir", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -279,6 +299,7 @@ h6 {
   /* height: 100vh; */
   height: fit-content;
   background-color: #2d2c31;
+  background-color: #35343A;
   min-height: 100vh;
   background-size: cover;
   position: relative;
@@ -332,6 +353,7 @@ h6 {
   font-weight: 700;
   /* line-height: 56px; */
   /* text-transform: uppercase; */
+  padding: 0 0 1rem 0;
   color: #fff;
 }
 
@@ -342,7 +364,8 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Avenir", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -744,7 +767,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Avenir", sans-serif;
   font-size: 14px;
 }
 
@@ -855,7 +879,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Avenir", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;

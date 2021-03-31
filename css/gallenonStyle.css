@@ -1,6 +1,9 @@
 /* -----------------------------------------
 # Galleon general
 ------------------------------------------*/
+body {
+    font-family: "Avenir", sans-serif !important;
+}
 .container-fluid {
     padding: 0px;
 }
@@ -19,7 +22,8 @@
 }
 
 #title {
-    background-image: linear-gradient(90deg, rgba(253,211,0,1) 0%, rgba(239,3,145,1) 33%, rgba(239,3,145,1) 66%, rgba(7,249,249,1) 100%);
+    /* background-image: linear-gradient(90deg, rgba(253,211,0,1) 0%, rgba(239,3,145,1) 33%, rgba(239,3,145,1) 66%, rgba(7,249,249,1) 100%); */
+    background-image: linear-gradient(32.73deg, #FDD400 6.99%, #F00491 93.01%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: 0 100%;
@@ -36,17 +40,55 @@
 }
 
 .sub-title {
-    font-family: "Poppins", sans-serif;
     font-size: 25px;
-    font-weight: 400
+    font-weight: 400;
+    padding: 1.2rem 0 0 0;
 }
 
 .galleon {
     width: 90%;
     margin-left: 5%;
     position: relative;
-    padding: 250px 0 55px 0;
+    padding: 200px 0 55px 0;
     min-height: calc(100vh - 60px);
+}
+.font-size-sm {
+    font-size: 24px;
+}
+.font-md {
+    font-size: 24px;
+    font-weight: 500;
+}
+.font-size-lg {
+    font-size: 32px;
+}
+.font-xlg {
+    font-size: 40px;
+    font-weight: 800;
+}
+.text-underline {
+    text-decoration: underline;
+}
+
+
+/* --------------------------------------------
+# @media font section
+-------------------------------------------- */
+@media (max-width:501px) {
+    .font-size-sm {
+        font-size: 16px;
+    }
+    .font-md {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .font-size-lg {
+        font-size: 26px;
+    }
+    .font-xlg {
+        font-size: 28px;
+        font-weight: 800;
+    }
 }
 
 /* --------------------------------------------
@@ -62,6 +104,7 @@
 #hero-before:before {
     content: "";
     background: #2d2c31;
+    background: #222029;
     background: url(../img/top_article.png) right bottom, url(../img/minner.png) 20%;
     background-repeat: no-repeat, no-repeat;
     background-size: 66vw 70vh, 450px 800px;
@@ -83,17 +126,42 @@
 }
 
 /* --------------------------------------------
+# Download section
+-------------------------------------------- */
+.download {
+    background: #35343A;
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    padding: 100px 0 55px 0;
+    min-height: calc(100vh - 60px);
+}
+
+
+/* --------------------------------------------
 # Tutorias section
 -------------------------------------------- */
-.tutorial {
+/* .tutorial {
     height: 100%;
-    padding: 0 5vw 100px 5vw;
+    padding: 100px 0 55px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-color: #302f35;
+    background-color: #35343A;
+} */
+.tutorial {
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    padding: 100px 0 55px 0;
+    min-height: calc(100vh - 60px);
+    background-color: #35343A;
+    /* background-color: #2d2c31 ; */
+}
+iframe {
+    width: 100%;
 }
 
 .first {
@@ -122,7 +190,8 @@
     margin-left: 5%;
     border-bottom: 3px solid #57565a;
     position: relative;
-    padding: 200px 0 55px 0;
+    padding: 100px 0 55px 0;
+    min-height: calc(100vh - 60px);
 }
 
 .bottom-link-galleon>a>i,
@@ -170,8 +239,9 @@
 }
 
 @media (max-width: 768px) {
-    .galleon {
-        padding: 150px 5vw 100px 5vw;
+    .galleon,
+    .download {
+        padding: 100px 5vw 100px 5vw;
     }
 }
 
@@ -182,7 +252,8 @@
 
     }
 
-    .galleon {
+    .galleon,
+    .download {
         height: fit-content;
         padding: 100px 5vw 100px 5vw;
     }
