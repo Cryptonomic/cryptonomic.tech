@@ -310,7 +310,7 @@ h6 {
 #hero:before {  
   content: "";
   background: #2d2c31;
-  background: url(../img/article_bottom.png) left bottom;
+  /* background: url(../img/article_bottom.png) left bottom; */
   background-repeat: no-repeat;
   background-size: 80vw 100vh;
   position: absolute;

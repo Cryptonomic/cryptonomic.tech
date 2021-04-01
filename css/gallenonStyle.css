@@ -104,19 +104,20 @@ body {
 #hero-before:before {
     content: "";
     background: #2d2c31;
-    background: #222029;
-    background: url(../img/top_article.png) right bottom, url(../img/minner.png) 20%;
+    /* background: #222029; */
+    background: url(../img/top_article.png) left top, url(../img/minner.png) right;
     background-repeat: no-repeat, no-repeat;
     background-size: 66vw 70vh, 450px 800px;
     position: absolute;
-    bottom: -76px;
-    top: 0;
+    bottom: -376px;
+    top: 100px;
     left: 0;
     right: 0;
+    opacity: 0.9;
 }
 
 #hero:before {
-    background: url(../img/article_bottom.png) right bottom;
+    /* background: url(../img/article_bottom.png) right bottom; */
     background-size: 78vw 101vh;
     bottom: -121px;
   }
@@ -135,6 +136,11 @@ body {
     position: relative;
     padding: 100px 0 55px 0;
     min-height: calc(100vh - 60px);
+}
+.image-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
 }
 
 
