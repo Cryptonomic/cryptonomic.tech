@@ -124,39 +124,61 @@ body {
 
 .banner-logo {
     width: 60%;
+    /* transform: translate(25%, 25%); */
 }
+
+#banner-before::before {
+    /* position: relative;
+    background: url(../img/banner_logo.png) no-repeat center center/cover; 
+    height: fit-content;
+    width: 70%;
+    opacity: 0.2; */
+
+}
+
+.banner--images{
+    position: relative;
+    width: 100%;
+    margin-bottom: 255px;
+}
+
+.banner--images #banner-before{
+  position: absolute;
+}
+
 
 /* --------------------------------------------
 # Download section
 -------------------------------------------- */
 .download {
-    background: #35343A;
     width: 90%;
     margin-left: 5%;
     position: relative;
     padding: 100px 0 55px 0;
     min-height: calc(100vh - 60px);
 }
+
+#desktop-download {
+    background: #35343A;
+}
+
 .image-icon {
     width: 56px;
     height: 56px;
     border-radius: 8px;
+}
+#mobile-download{
+    position: relative;
+    background: url(../img/galleon_mobile_background.png) no-repeat center center/cover; 
+    height: fit-content;
+    width: 100%;
 }
 
 
 /* --------------------------------------------
 # Tutorias section
 -------------------------------------------- */
-/* .tutorial {
-    height: 100%;
-    padding: 100px 0 55px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    background-color: #35343A;
-} */
+
 .tutorial {
     width: 90%;
     margin-left: 5%;
@@ -164,7 +186,6 @@ body {
     padding: 100px 0 55px 0;
     min-height: calc(100vh - 60px);
     background-color: #35343A;
-    /* background-color: #2d2c31 ; */
 }
 iframe {
     width: 100%;

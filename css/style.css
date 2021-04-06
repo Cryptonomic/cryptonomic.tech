@@ -293,7 +293,9 @@ h6 {
 --------------------------------------------------------------*/
 
 #heros,
-#hero {
+#hero,
+#mobile-download,
+#tutorial {
   width: 100%;
   height: -moz-fit-content;
   /* height: 100vh; */
