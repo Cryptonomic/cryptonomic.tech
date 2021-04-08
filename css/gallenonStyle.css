@@ -92,6 +92,21 @@ body {
 }
 
 /* --------------------------------------------
+# General section
+-------------------------------------------- */
+
+.download,
+.mobile-download,
+.tutorial,
+.support {
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    padding: 100px 0 55px 0;
+    min-height: calc(100vh - 60px);
+}
+
+/* --------------------------------------------
 # Galleon section
 -------------------------------------------- */
 
@@ -122,43 +137,25 @@ body {
     bottom: -121px;
   }
 
-.banner-logo {
-    width: 60%;
-    /* transform: translate(25%, 25%); */
-}
-
-#banner-before::before {
-    /* position: relative;
-    background: url(../img/banner_logo.png) no-repeat center center/cover; 
-    height: fit-content;
-    width: 70%;
-    opacity: 0.2; */
-
-}
-
-.banner--images{
-    position: relative;
+.under {
     width: 100%;
-    margin-bottom: 255px;
-}
-
-.banner--images #banner-before{
-  position: absolute;
-}
-
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+.over {
+    width: 50%;
+    position: absolute;
+    top: 22%;
+    left: 25%;
+  }
 
 /* --------------------------------------------
 # Download section
 -------------------------------------------- */
-.download {
-    width: 90%;
-    margin-left: 5%;
-    position: relative;
-    padding: 100px 0 55px 0;
-    min-height: calc(100vh - 60px);
-}
 
-#desktop-download {
+#download {
     background: #35343A;
 }
 
@@ -167,10 +164,13 @@ body {
     height: 56px;
     border-radius: 8px;
 }
+.mobile-download {
+    min-height: 25vh;
+}
 #mobile-download{
     position: relative;
-    background: url(../img/galleon_mobile_background.png) no-repeat center center/cover; 
-    height: fit-content;
+    background: url(../img/galleon_mobile_background.png) no-repeat center center/cover;
+    min-height: 25vh; 
     width: 100%;
 }
 
@@ -180,11 +180,6 @@ body {
 -------------------------------------------- */
 
 .tutorial {
-    width: 90%;
-    margin-left: 5%;
-    position: relative;
-    padding: 100px 0 55px 0;
-    min-height: calc(100vh - 60px);
     background-color: #35343A;
 }
 iframe {
@@ -213,12 +208,7 @@ iframe {
 # Support section
 ---------------------------------------------*/
 .support {
-    width: 90%;
-    margin-left: 5%;
     border-bottom: 3px solid #57565a;
-    position: relative;
-    padding: 100px 0 55px 0;
-    min-height: calc(100vh - 60px);
 }
 
 .bottom-link-galleon>a>i,
@@ -267,7 +257,8 @@ iframe {
 
 @media (max-width: 768px) {
     .galleon,
-    .download {
+    .download,
+    .mobile-download {
         padding: 100px 5vw 100px 5vw;
     }
 }
@@ -280,7 +271,8 @@ iframe {
     }
 
     .galleon,
-    .download {
+    .download,
+    .mobile-download {
         height: fit-content;
         padding: 100px 5vw 100px 5vw;
     }
