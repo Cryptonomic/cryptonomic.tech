@@ -29,6 +29,7 @@ p, h1, h2, h3, h4, h5, button, table, li>a {
 body {
   background: #2d2c31;
   color: white;
+  overflow-y: scroll;
   /* font-family: "Open Sans", sans-serif; */
 }
 
@@ -59,10 +60,15 @@ body {
   border-radius: 0 !important;
   padding: 10px 35px 10px 35px;
   width: 100%;
-  font-family: "Avenir", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: transparent;
   border-image: linear-gradient(90deg, #70E2FF 0%, #F10E8A 40.99%, #FF35A7 63.65%, #FCBF0F 100%) 1;
   transition: 1s !important;
+}
+@media(max-width:768px) {
+  .filler-btn {
+    padding: 10px 15px 10px 15px;
+  }
 }
 
 .filler-btn:hover {
@@ -95,7 +101,8 @@ body {
   color: white !important;
   border: none !important;
   border-radius: 0 !important;
-  padding: 10px 50px 10px 50px !important;
+  /* padding: 10px 50px 10px 50px !important; */
+  /* padding: 10px 10px 10px 10px !important; */
   background: linear-gradient(90deg, rgba(80,163,222,1) 0%, rgba(242,4,143,1) 49%, rgba(253,127,47,1) 100%) !important;
 }
 
@@ -133,8 +140,7 @@ a:focus {
 }
 
 p {
-  /* font-family: "Poppins", sans-serif; */
-  font-family: "Avenir", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400
 }
@@ -176,7 +182,7 @@ a:focus {
   /* color: linear-gradient(90deg, rgba(253,212,0,1) 0%, rgba(240,4,145,1) 100%); */
   color: #2dca98;
   outline: none;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 li>a:focus {
@@ -195,8 +201,7 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: "Poppins", sans-serif; */
-  font-family: "Avenir", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -267,8 +272,7 @@ h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  /* font-family: "Poppins", sans-serif; */
-  font-family: "Avenir", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -295,10 +299,10 @@ h6 {
 #heros,
 #hero,
 #mobile-download,
-#tutorial {
+#tutorial,
+#support {
   width: 100%;
   height: -moz-fit-content;
-  /* height: 100vh; */
   height: fit-content;
   background-color: #2d2c31;
   background-color: #35343A;
@@ -366,8 +370,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  /* font-family: "Poppins", sans-serif; */
-  font-family: "Avenir", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -660,6 +663,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Sections Footer
 --------------------------------*/
 .footer {
+  background: #2d2c31;
   width: 100%;
   height: 60px;
 }
@@ -769,8 +773,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  /* font-family: "Poppins", sans-serif; */
-  font-family: "Avenir", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
 }
 
@@ -881,8 +884,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn {
-  /* font-family: "Poppins", sans-serif; */
-  font-family: "Avenir", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -1218,15 +1220,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 26px;    
   }
 
-  /* #header #logo img {
-    max-height: 40px;
- 
-  } */
-
-  /* #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  } */
 
   #hero h2 {
     font-size: 18px;
