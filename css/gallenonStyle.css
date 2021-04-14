@@ -1,6 +1,9 @@
 /* -----------------------------------------
 # Galleon general
 ------------------------------------------*/
+body {
+    font-family: "Poppins", sans-serif !important;
+}
 .container-fluid {
     padding: 0px;
 }
@@ -19,6 +22,7 @@
 }
 
 #title {
+    background-image: -webkit-linear-gradient(left, rgba(253,211,0,1) 0%, rgba(239,3,145,1) 33%, rgba(239,3,145,1) 66%, rgba(7,249,249,1) 100%);
     background-image: linear-gradient(90deg, rgba(253,211,0,1) 0%, rgba(239,3,145,1) 33%, rgba(239,3,145,1) 66%, rgba(7,249,249,1) 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
@@ -30,22 +34,121 @@
     margin: 0 0 45px 0 !important;
     width: fit-content;
     width: -moz-fit-content;
+    width: intrinsic;
     font-size: 50px;
     color: white;
     position: relative;
 }
 
 .sub-title {
-    font-family: "Poppins", sans-serif;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: intrinsic;
     font-size: 25px;
-    font-weight: 400
+    font-weight: 400;
+    padding: 1rem 0 1rem 0;
 }
 
 .galleon {
     width: 90%;
     margin-left: 5%;
     position: relative;
-    padding: 250px 0 55px 0;
+    padding: 150px 0 55px 0;
+    min-height: calc(100vh - 60px);
+}
+
+.font-size-m {
+    font-style: 16px;
+}
+.font-size-sm {
+    font-size: 20px;
+}
+.font-md {
+    font-size: 24px;
+}
+.font-size-lg {
+    font-size: 32px;
+}
+.font-xlg {
+    font-size: 40px;
+    font-weight: 800;
+}
+.link-underline {
+    text-decoration: underline;
+}
+
+.link-underline:hover {
+    opacity: 0.5;
+}
+
+
+/* --------------------------------------------
+# @media font section
+-------------------------------------------- */
+@media (max-width:768px) {
+    .font-size-m {
+        font-size: 16px;
+    }
+    .font-size-sm {
+        font-size: 16px;
+    }
+    .font-size-lg {
+        font-size: 30px;
+    }
+}
+@media (max-width:501px) {
+    .font-md {
+        font-size: 20px;
+    }
+    .font-size-lg {
+        font-size: 20px;
+    }
+    .font-xlg {
+        font-size: 28px;
+        font-weight: 800;
+    }
+}
+@media (max-width:375px) {
+    .font-size-m {
+        font-size: 12px;
+    }
+    
+    .font-md {
+        font-size: 16px;
+    }
+    .font-size-lg {
+        font-size: 18px;
+    }
+    .font-xlg {
+        font-size: 28px;
+        font-weight: 800;
+    }
+}
+@media (max-width:320px) {
+    .font-md {
+        font-size: 14px;
+    }
+    .font-size-lg {
+        font-size: 16px;
+    }
+    .font-xlg {
+        font-size: 24px;
+        font-weight: 800;
+    }
+}
+
+/* --------------------------------------------
+# General section
+-------------------------------------------- */
+
+.download,
+.mobile-download,
+.tutorial,
+.support {
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    padding: 100px 0 55px 0;
     min-height: calc(100vh - 60px);
 }
 
@@ -62,38 +165,72 @@
 #hero-before:before {
     content: "";
     background: #2d2c31;
-    background: url(../img/top_article.png) right bottom, url(../img/minner.png) 20%;
+    /* background: #222029; */
+    background: url(../img/top_article.png) left top, url(../img/minner.png) right;
     background-repeat: no-repeat, no-repeat;
     background-size: 66vw 70vh, 450px 800px;
     position: absolute;
-    bottom: -76px;
-    top: 0;
+    bottom: -376px;
+    top: 100px;
     left: 0;
     right: 0;
+    opacity: 0.9;
 }
 
 #hero:before {
-    background: url(../img/article_bottom.png) right bottom;
+    /* background: url(../img/article_bottom.png) right bottom; */
     background-size: 78vw 101vh;
     bottom: -121px;
   }
 
-.banner-logo {
-    width: 60%;
+.under {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+.over {
+    width: 50%;
+    position: absolute;
+    top: 22%;
+    left: 25%;
+  }
+
+/* --------------------------------------------
+# Download section
+-------------------------------------------- */
+
+#download {
+    background: #35343A;
 }
+
+.image-icon {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+}
+.min-section,
+#mobile-download {
+    min-height: 25vh;
+}
+#system-specs{
+    position: relative;
+    background: url(../img/galleon_mobile_background.png) no-repeat center center/cover;
+    min-height: 25vh; 
+    width: 100%;
+}
+
 
 /* --------------------------------------------
 # Tutorias section
 -------------------------------------------- */
+
 .tutorial {
-    height: 100%;
-    padding: 0 5vw 100px 5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    /* background-color: #35343A; */
+}
+iframe {
     width: 100%;
-    background-color: #302f35;
 }
 
 .first {
@@ -118,11 +255,7 @@
 # Support section
 ---------------------------------------------*/
 .support {
-    width: 90%;
-    margin-left: 5%;
     border-bottom: 3px solid #57565a;
-    position: relative;
-    padding: 200px 0 55px 0;
 }
 
 .bottom-link-galleon>a>i,
@@ -170,8 +303,10 @@
 }
 
 @media (max-width: 768px) {
-    .galleon {
-        padding: 150px 5vw 100px 5vw;
+    .galleon,
+    .download,
+    .mobile-download {
+        padding: 100px 5vw 100px 5vw;
     }
 }
 
@@ -182,7 +317,9 @@
 
     }
 
-    .galleon {
+    .galleon,
+    .download,
+    .mobile-download {
         height: fit-content;
         padding: 100px 5vw 100px 5vw;
     }
