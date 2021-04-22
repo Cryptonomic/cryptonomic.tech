@@ -49,12 +49,19 @@ body {
     padding: 1rem 0 1rem 0;
 }
 
-.galleon {
+.galleon,
+.hero-child {
     width: 90%;
     margin-left: 5%;
     position: relative;
     padding: 150px 0 55px 0;
     min-height: calc(100vh - 60px);
+}
+.galleon {
+    padding: 150px 0 55px 0;
+}
+.hero-child {
+    padding: 48px 0 55px 0;
 }
 
 .font-size-m {
@@ -63,8 +70,8 @@ body {
 .font-size-sm {
     font-size: 20px;
 }
-.font-md {
-    font-size: 24px;
+.font-size-md {
+    font-size: 22px;
 }
 .font-size-lg {
     font-size: 32px;
@@ -92,13 +99,16 @@ body {
     .font-size-sm {
         font-size: 16px;
     }
+    .font-size-md {
+        font-size: 20px;
+    }
     .font-size-lg {
         font-size: 30px;
     }
 }
 @media (max-width:501px) {
-    .font-md {
-        font-size: 20px;
+    .font-size-md {
+        font-size: 18px;
     }
     .font-size-lg {
         font-size: 20px;
@@ -113,7 +123,7 @@ body {
         font-size: 12px;
     }
     
-    .font-md {
+    .font-size-md {
         font-size: 16px;
     }
     .font-size-lg {
@@ -125,7 +135,7 @@ body {
     }
 }
 @media (max-width:320px) {
-    .font-md {
+    .font-size-md {
         font-size: 14px;
     }
     .font-size-lg {
@@ -137,28 +147,10 @@ body {
     }
 }
 
-/* --------------------------------------------
-# General section 
--------------------------------------------- */
-
-.tutorial,
-.support {
-    width: 90%;
-    margin-left: 5%;
-    position: relative;
-    padding: 48px 0 55px 0;
-    min-height: calc(100vh - 60px);
-}
-
-/* --------------------------------------------
-# Galleon section
--------------------------------------------- */
-
 .row .h-100 {
     justify-content: space-around;
     align-items: center;
 }
-
 
 #hero-before:before {
     content: "";
@@ -179,6 +171,100 @@ body {
         background-size: 350px 1000px;
     }
 }
+/* --------------------------------------------
+#  Dropdown section
+-------------------------------------------- */
+.dropdown-menu {
+    width: 93%;
+    background: #4A494E;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.dropdown-header {
+    font-size: 16px;
+    padding: .5rem 1rem;
+    color: #fff;
+    white-space: nowrap;
+}
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus-within {
+    background: none;
+    opacity: 0.5;
+}
+
+.dropdown-toggle::after {
+    float: right;
+    margin: 10px 5px;
+}
+.scrollable-menu {
+    height: auto;
+    max-height: 180px;
+    overflow-x: hidden;
+}
+
+@media (max-width: 1024px) {
+    .dropdown-menu {
+        width: 92.5%;
+    }
+    .dropdown-header {
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .dropdown-menu {
+        width: max-content;
+    }
+
+    .dropdown-header {
+        font-size: 14px;
+    }
+
+    .dropdown-item p,
+    .dropdown-item span {
+        font-size: 14px;
+    }
+}
+@media (max-width:501px) {
+    .dropdown-menu {
+        width: 91%;
+    }
+    .dropdown-header {
+        font-size: 14px;
+    }
+    .dropdown-item p,
+    .dropdown-item span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:375px) {
+    .dropdown-header {
+        font-size: 13px;
+    }
+    .dropdown-item p,
+    .dropdown-item span {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:320px) {
+    .dropdown-menu {
+        width: 90%;
+    }
+    .dropdown-header {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+    .dropdown-item p,
+    .dropdown-item span {
+        font-size: 10px;
+    }
+}
+
 .min-hero {
     min-height: 50vh;
   }
@@ -195,9 +281,16 @@ body {
     width: 279px;
     height: 287px;
 }
+#tutorial p {
+    white-space: nowrap;
+}
 
 iframe {
     width: 100%;
+}
+
+#support a:hover {
+    opacity: 0.5;
 }
 
 @media (max-width: 1024px) {

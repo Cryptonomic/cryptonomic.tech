@@ -89,6 +89,7 @@ body {
   -moz-box-shadow: 0px 0px 8px -1px rgba(255,255,255,1);
   box-shadow: 0px 0px 8px -1px rgba(255,255,255,1);
   opacity: 0.7;
+  outline: none !important;
   background: linear-gradient(90deg, rgba(80,163,222,1) 0%, rgba(242,4,143,1) 49%, rgba(253,127,47,1) 100%) !important;
 }
 
@@ -101,6 +102,7 @@ body {
   color: white !important;
   border: none !important;
   border-radius: 0 !important;
+  outline: none !important;
   background: linear-gradient(90deg, rgba(80,163,222,1) 0%, rgba(242,4,143,1) 49%, rgba(253,127,47,1) 100%) !important;
 }
 

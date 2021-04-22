@@ -98,10 +98,45 @@
                     </div>
                 </div>
                 <div class="row justify-content-between">
-                    <div class="col-xl-4 col-lg-5 col-md-5 col-sm-3 mt-3">
-                        <a href="#download" class="btn filler-btn">
-                            Download
-                        </a>
+                    <div class="col-xl-4 col-lg-5 col-md-5 col-sm-3 dropdown show mt-3">
+                            <a class="btn filler-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-flip ="false" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Download <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li class="dropdown-header">Galleon for Desktop</li>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between" href="https://github.com/Cryptonomic/Deployments/wiki/Galleon:-Releases">
+                                        <span><img src="img/apple-filled.svg" alt="apple-logo"> macOS</span>
+                                        <p>GitHub Direct Download</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between" href=" https://www.microsoft.com/en-us/p/galleon/9mt4b7r52d0g">
+                                        <span><img src="img/windows-filled.svg" alt="windows-logo"> Windows</span>
+                                        <p>Microsoft Store</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between" href=" https://snapcraft.io/galleon">
+                                        <span><img src="img/linux-filled.svg" alt="linux-logo"> Linux</span>
+                                        <p>Snap Store</p>
+                                    </a>
+                                </li>
+                                <p class="dropdown-header">Galleon Mobile</p>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between" href=" https://apps.apple.com/us/app/galleon-mobile-wallet/id1521872814">
+                                        <span><img src="img/apple-filled.svg" alt="apple-logo">iOS</span>
+                                        <p>App Store</p>
+                                    </a>
+                                </li>
+                                <div class="dropdown-divider"></div>
+                                <p class="dropdown-header"> Releases, Downloads and MD5 checksums </p>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between" href="https://github.com/Cryptonomic/Deployments/wiki/Galleon:-Releases">
+                                        <p><img src="img/code.svg" alt="code"> View Repo on GitHub</p>
+                                    </a>
+                                </li>
+                            </ul>
                     </div>
                     <div class="col-xl-2 col-lg-1 col-md-1 col-sm-3"></div>
                     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 mt-3">
@@ -160,11 +195,11 @@
         <p class="font-size-lg text-center"> Desktop Galleon Supports Hardware Signing </p>
         <div class="row text-center mx-0">
           <div class="col-xl-12 col-md-12 col-lg-12 align-items-center">
-              <img src="./img/ledger.svg" class="col-xl-5 col-md-10 col-lg-8 my-5">
+              <img src="./img/ledger.svg" class="col-xl-5 col-md-10 col-lg-8 my-5" alt="ledger">
               <p class="font-size-sm">
                   Using a hardware wallet is the safest way to store your crypto. 
               </p>
-              <p class="font-md">
+              <p class="font-size-md">
                   Need a Ledger device? 
                   <a href="https://shop.ledger.com/pages/ledger-nano-x?r=631fb45e26da" class="text-white link-underline" target="_blank">
                       Get it here!
@@ -180,7 +215,7 @@
     Tutorials Section
   ============================-->
     <section id="tutorial" class="hero">
-            <div class="tutorial">
+            <div class="hero-child">
                 <div class="container-fluid h-100">
                     <div class="row justify-content-around align-items-center mb-5">
                         <h4 id="title" class="sub-title text-center mb-3 font-xlg">
@@ -189,7 +224,7 @@
                     </div>
                     <div class="row justify-content-around">
                       <div class="col-xl-10 col-lg-12 col-md-11">
-                        <p class="font-size-sm">Creating a new account</p>                            
+                        <p class="font-size-md">Creating a new account</p>                            
                         <iframe width="100%" height="249" 
                             src="https://www.youtube.com/embed/lLqCQUDaI1o?modestbranding=1">
                         </iframe>
@@ -197,13 +232,13 @@
                     </div>
                     <div class="row justify-content-around ">
                         <div class="col-xl-4 col-lg-6 col-md-5 p-3">
-                            <p class="font-size-sm">Creating and loading wallets</p>
+                            <p class="font-size-md">Creating and loading wallets</p>
                             <iframe width="100%" height="249" 
                                 src="https://www.youtube.com/embed/XWDy06FqKIg?modestbranding=1">
                             </iframe>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-5 p-3">
-                          <p class="font-size-sm">Migrating a Tezos account from Tezbox</p>
+                          <p class="font-size-md">Migrating a Tezos account from Tezbox</p>
                           <iframe width="100%" height="249" 
                               src="https://www.youtube.com/embed/fLnOcezCZU0?modestbranding=1" >
                           </iframe>
@@ -211,13 +246,13 @@
                     </div>
                     <div class="row justify-content-around ">
                         <div class="col-xl-4 col-lg-6 col-md-5 p-3">
-                            <p class="font-size-sm">Importing a fundraiser wallet</p>
+                            <p class="font-size-md">Importing a fundraiser wallet</p>
                             <iframe width="100%" height="249" 
                                 src="https://www.youtube.com/embed/eD-y1cEwB94?modestbranding=1">
                             </iframe>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-5 p-3">
-                            <p class="font-size-sm">Delegating Tez</p>                           
+                            <p class="font-size-md">Delegating Tez</p>                           
                             <iframe width="100%" height="249" 
                                 src="https://www.youtube.com/embed/QBJACuJt5DA?modestbranding=1">
                             </iframe>
@@ -231,7 +266,7 @@
     Support Section
 ============================-->
     <section id="support" >
-        <div class="support">
+        <div class="hero-child">
             <div class="container-fluid">
                 <div class="row justify-content-around align-items-center mb-5">
                     <h4 id="title" class="sub-title text-center mb-3 font-xlg">
@@ -246,7 +281,7 @@
                         <div class="d-md-flex flex-row pt-3 pb-7">
                             <div class="col-xl-4 col-md-4 col-lg-4 font-size-m text-center ">
                                 <a href="https://cryptonomic.zendesk.com/hc/en-us" target="_blank">
-                                    <img src="./img/cib_zendesk.svg">                         
+                                    <img src="./img/cib_zendesk.svg" alt="zendesk-icon">                         
                                 </a>
                                <p class="mt-3">
                                 Consult the FAQ on our Zendesk support portal
@@ -254,7 +289,7 @@
                             </div>
                             <div class="col-xl-4 col-md-4 col-lg-4 font-size-m text-center">
                                 <a href="https://matrix.to/#/!heGqMNcsOSHGPxrMJs:cryptonomic.tech" target="_blank">
-                                    <img src="./img/cib_riot.svg">                                   
+                                    <img src="./img/cib_riot.svg" alt="matrix-icon">                                   
                                 </a>
                                 <p class="mt-3">
                                     For community-based support, join our users channel on Matrix / Element
@@ -262,7 +297,7 @@
                             </div>
                             <div class="col-xl-4 col-md-4 col-lg-4 font-size-m text-center ">
                                 <a href="mailto:support@cryptonomic.tech" target="_blank">
-                                    <img src="./img/carbon_email.svg">
+                                    <img src="./img/carbon_email.svg" alt="email-icon">
                                 </a>
                                 <p class="mt-2">
                                     Email us at support@cryptonomic.tech
