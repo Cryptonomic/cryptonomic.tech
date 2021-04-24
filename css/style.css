@@ -61,23 +61,18 @@ body {
 .filler-btn {
   color: white;
   border-radius: 0 !important;
-  padding: 10px 35px 10px 35px;
+  padding: 10px 5px 10px 5px;
   width: 100%;
   font-family: "Poppins", sans-serif;
   background: transparent;
-  -webkit-border-image: -webkit-linear-gradient(left, #70E2FF 0%, #F10E8A 40.99%, #FF35A7 63.65%, #FCBF0F 100%);
-  border-image: linear-gradient(90deg, #70E2FF 0%, #F10E8A 40.99%, #FF35A7 63.65%, #FCBF0F 100%) 1;
+  border: 1px;
+  background: -webkit-linear-gradient(left, #70E2FF 0%, #F10E8A 40.99%, #FF35A7 63.65%, #FCBF0F 100%);
+  background: linear-gradient(90deg, #70E2FF 0%, #F10E8A 40.99%, #FF35A7 63.65%, #FCBF0F 100%);
   transition: 1s !important;
-}
-@media(max-width:768px) {
-  .filler-btn {
-    padding: 10px 15px 10px 15px;
-  }
 }
 
 .filler-btn:hover {
-  background: -webkit-linear-gradient(left, #70E2FF 0%, #F10E8A 40.99%, #FF35A7 63.65%, #FCBF0F 100%);
-  background: linear-gradient(90deg, #70E2FF 0%, #F10E8A 40.99%, #FF35A7 63.65%, #FCBF0F 100%);
+  opacity: 0.5;
 }
 
 .view_tutorial:active,
@@ -94,6 +89,7 @@ body {
   -moz-box-shadow: 0px 0px 8px -1px rgba(255,255,255,1);
   box-shadow: 0px 0px 8px -1px rgba(255,255,255,1);
   opacity: 0.7;
+  outline: none !important;
   background: linear-gradient(90deg, rgba(80,163,222,1) 0%, rgba(242,4,143,1) 49%, rgba(253,127,47,1) 100%) !important;
 }
 
@@ -106,6 +102,7 @@ body {
   color: white !important;
   border: none !important;
   border-radius: 0 !important;
+  outline: none !important;
   background: linear-gradient(90deg, rgba(80,163,222,1) 0%, rgba(242,4,143,1) 49%, rgba(253,127,47,1) 100%) !important;
 }
 
@@ -291,9 +288,8 @@ h6 {
 
 #heros,
 #hero,
-#mobile-download,
-#tutorial,
-#support {
+.hero,
+#tutorial {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;

@@ -49,12 +49,19 @@ body {
     padding: 1rem 0 1rem 0;
 }
 
-.galleon {
+.galleon,
+.hero-child {
     width: 90%;
     margin-left: 5%;
     position: relative;
     padding: 150px 0 55px 0;
     min-height: calc(100vh - 60px);
+}
+.galleon {
+    padding: 150px 0 55px 0;
+}
+.hero-child {
+    padding: 48px 0 55px 0;
 }
 
 .font-size-m {
@@ -63,8 +70,8 @@ body {
 .font-size-sm {
     font-size: 20px;
 }
-.font-md {
-    font-size: 24px;
+.font-size-md {
+    font-size: 22px;
 }
 .font-size-lg {
     font-size: 32px;
@@ -92,13 +99,16 @@ body {
     .font-size-sm {
         font-size: 16px;
     }
+    .font-size-md {
+        font-size: 20px;
+    }
     .font-size-lg {
         font-size: 30px;
     }
 }
 @media (max-width:501px) {
-    .font-md {
-        font-size: 20px;
+    .font-size-md {
+        font-size: 18px;
     }
     .font-size-lg {
         font-size: 20px;
@@ -113,7 +123,7 @@ body {
         font-size: 12px;
     }
     
-    .font-md {
+    .font-size-md {
         font-size: 16px;
     }
     .font-size-lg {
@@ -125,7 +135,7 @@ body {
     }
 }
 @media (max-width:320px) {
-    .font-md {
+    .font-size-md {
         font-size: 14px;
     }
     .font-size-lg {
@@ -137,175 +147,160 @@ body {
     }
 }
 
-/* --------------------------------------------
-# General section
--------------------------------------------- */
-
-.download,
-.mobile-download,
-.tutorial,
-.support {
-    width: 90%;
-    margin-left: 5%;
-    position: relative;
-    padding: 100px 0 55px 0;
-    min-height: calc(100vh - 60px);
-}
-
-/* --------------------------------------------
-# Galleon section
--------------------------------------------- */
-
 .row .h-100 {
     justify-content: space-around;
     align-items: center;
 }
 
-
 #hero-before:before {
     content: "";
     background: #2d2c31;
-    /* background: #222029; */
-    background: url(../img/top_article.png) left top, url(../img/minner.png) right;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 66vw 70vh, 450px 800px;
+    background: url(../img/minner.svg) top right;
+    background-repeat: no-repeat;
+    background-size: 500px 1050px;
     position: absolute;
-    bottom: -376px;
-    top: 100px;
+    bottom: 0px;
+    top: 0;
     left: 0;
-    right: 0;
+    right: 0px;
     opacity: 0.9;
 }
 
-#hero:before {
-    /* background: url(../img/article_bottom.png) right bottom; */
-    background-size: 78vw 101vh;
-    bottom: -121px;
-  }
-
-.under {
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  
-.over {
-    width: 50%;
-    position: absolute;
-    top: 22%;
-    left: 25%;
-  }
-
+@media (max-width: 1200px) {
+    #hero-before:before {
+        background-size: 350px 1000px;
+    }
+}
 /* --------------------------------------------
-# Download section
+#  Dropdown section
 -------------------------------------------- */
+.dropdown-menu {
+    width: 93%;
+    background: #4A494E;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.dropdown-header {
+    font-size: 16px;
+    padding: .5rem 1rem;
+    color: #fff;
+    white-space: nowrap;
+}
+.dropdown-item {
+    color: #fff;
+}
 
-#download {
+.dropdown-item:hover,
+.dropdown-item:focus-within {
+    background: none;
+    opacity: 0.5;
+}
+
+.dropdown-toggle::after {
+    float: right;
+    margin: 10px 5px;
+}
+.scrollable-menu {
+    height: auto;
+    max-height: 180px;
+    overflow-x: hidden;
+}
+
+@media (max-width: 1024px) {
+    .dropdown-menu {
+        width: 92.5%;
+    }
+    .dropdown-header {
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .dropdown-menu {
+        width: max-content;
+    }
+
+    .dropdown-header {
+        font-size: 14px;
+    }
+
+    .dropdown-item p,
+    .dropdown-item span {
+        font-size: 14px;
+    }
+}
+@media (max-width:501px) {
+    .dropdown-menu {
+        width: 91%;
+    }
+    .dropdown-header {
+        font-size: 14px;
+    }
+    .dropdown-item p,
+    .dropdown-item span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:375px) {
+    .dropdown-header {
+        font-size: 13px;
+    }
+    .dropdown-item p,
+    .dropdown-item span {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:320px) {
+    .dropdown-menu {
+        width: 90%;
+    }
+    .dropdown-header {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+    .dropdown-item p,
+    .dropdown-item span {
+        font-size: 10px;
+    }
+}
+
+.min-hero {
+    min-height: 50vh;
+  }
+  #sys-specs {
+    padding: 32px 0 0;
+  }
+  #hw-signing {
     background: #35343A;
+    background: #222029;
+    padding: 48px 0 0;
+  }
+
+.banner-logo {
+    width: 279px;
+    height: 287px;
+}
+#tutorial p {
+    white-space: nowrap;
 }
 
-.image-icon {
-    width: 140px;
-    height: 140px;
-    border-radius: 10px;
-}
-.min-section,
-#mobile-download {
-    min-height: 25vh;
-}
-#system-specs{
-    position: relative;
-    background: url(../img/galleon_mobile_background.png) no-repeat center center/cover;
-    min-height: 25vh; 
-    width: 100%;
-}
-
-
-/* --------------------------------------------
-# Tutorias section
--------------------------------------------- */
-
-.tutorial {
-    /* background-color: #35343A; */
-}
 iframe {
     width: 100%;
 }
 
-.first {
-    padding-right: 2vw !important;
-}
-
-.third {
-    padding-left: 2vw !important;
-}
-
-.second {
-    padding-left: 1vw !important;
-    padding-right: 1vw !important;
-}
-.video {
-    width: 100%;
-    height: 25vh;
-    background-color: #57565a;
-}
-
-/* --------------------------------------------
-# Support section
----------------------------------------------*/
-.support {
-    border-bottom: 3px solid #57565a;
-}
-
-.bottom-link-galleon>a>i,
-.margin_custom_right>a>i {
-  color: white;
-  font-size: 25px;
-}
-
-.bottom-link-galleon>a,
-.margin_custom_right>a {
-  text-decoration: none !important;
-}
-
-
-@media (max-width: 1200px) {  
-    /* .galleon {
-        padding: 10px 5vw 100px 5vw;
-    } */
-    .first {
-        padding-right: 1.5vw !important;
-        padding-left: 1.5vw !important;
-    }
-    
-    .third {
-        padding-right: 1.5vw !important;
-        padding-left: 1.5vw !important;
-    }
-    
-    .second {
-        padding-right: 1.5vw !important;
-        padding-left: 1.5vw !important;
-    }
+#support a:hover {
+    opacity: 0.5;
 }
 
 @media (max-width: 1024px) {
-    .support {
-        padding: 100px 0 55px 0;
-    }
-    .tutorial {
-        padding: 10px 5vw 100px 5vw;
-    }
     .title {
         font-size: 28px;
     }
 }
 
 @media (max-width: 768px) {
-    .galleon,
-    .download,
-    .mobile-download {
+    .galleon {
         padding: 100px 5vw 100px 5vw;
     }
 }
@@ -314,38 +309,20 @@ iframe {
     iframe {
         height: 200px;
         width: 100%;
-
     }
 
-    .galleon,
-    .download,
-    .mobile-download {
+    .galleon {
         height: fit-content;
         padding: 100px 5vw 100px 5vw;
-    }
-
-    .first {
-        padding-right: 3vw !important;
-        padding-left: 3vw !important;
-    }
-    
-    .third {
-        padding-right: 3vw !important;
-        padding-left: 3vw !important;
-    }
-    
-    .second {
-        padding-right: 3vw !important;
-        padding-left: 3vw !important;
     }
 
     #hero h1 {
         font-size: 35px !important;
         line-height: 39px;
     }
+
     .title {
         font-size: 35px !important;
         line-height: 39px;
     }
-
 }
