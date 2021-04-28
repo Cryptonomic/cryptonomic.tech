@@ -195,7 +195,6 @@ body {
 .dropdown-item {
     color: #fff;
 }
-
 .dropdown-item:hover,
 .dropdown-item:focus-within {
     background: none;
