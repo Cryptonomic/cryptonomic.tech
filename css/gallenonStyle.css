@@ -64,6 +64,12 @@ body {
     padding: 48px 0 55px 0;
 }
 
+#support .hero-child {
+    min-height: calc(100vh - 250px);
+    border-bottom: 3px solid #57565a;
+    bottom: 60px;
+}
+
 .font-size-m {
     font-style: 16px;
 }
@@ -100,7 +106,7 @@ body {
         font-size: 16px;
     }
     .font-size-md {
-        font-size: 20px;
+        font-size: 16px;
     }
     .font-size-lg {
         font-size: 30px;
@@ -196,9 +202,9 @@ body {
     opacity: 0.5;
 }
 
-.dropdown-toggle::after {
+.fa-chevron-down {
     float: right;
-    margin: 10px 5px;
+    padding: 0 20px 0 0;
 }
 .scrollable-menu {
     height: auto;
@@ -287,10 +293,6 @@ body {
 
 iframe {
     width: 100%;
-}
-
-#support a:hover {
-    opacity: 0.5;
 }
 
 @media (max-width: 1024px) {

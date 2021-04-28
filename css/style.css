@@ -75,6 +75,10 @@ body {
   opacity: 0.5;
 }
 
+.btn:focus {
+box-shadow: none !important;
+}
+
 .view_tutorial:active,
 .view-download:active,
 .filler-btn:active,
@@ -82,14 +86,12 @@ body {
 .send-message:active,
 .view_tutorial:active {
   color: white !important;
-  border: none !important;
   border-radius: 0 !important;
   padding: 10px 50px 10px 50px !important;
   -webkit-box-shadow: 0px 0px 8px -1px rgba(255,255,255,1);
   -moz-box-shadow: 0px 0px 8px -1px rgba(255,255,255,1);
   box-shadow: 0px 0px 8px -1px rgba(255,255,255,1);
   opacity: 0.7;
-  outline: none !important;
   background: linear-gradient(90deg, rgba(80,163,222,1) 0%, rgba(242,4,143,1) 49%, rgba(253,127,47,1) 100%) !important;
 }
 
@@ -100,9 +102,7 @@ body {
 .send-message:focus,
 .view_tutorial:focus {
   color: white !important;
-  border: none !important;
   border-radius: 0 !important;
-  outline: none !important;
   background: linear-gradient(90deg, rgba(80,163,222,1) 0%, rgba(242,4,143,1) 49%, rgba(253,127,47,1) 100%) !important;
 }
 
