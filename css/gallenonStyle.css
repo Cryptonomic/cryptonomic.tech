@@ -272,15 +272,13 @@ body {
 
 .min-hero {
     min-height: 50vh;
-  }
-  #sys-specs {
+}
+#sys-specs {
     padding: 32px 0 0;
-  }
-  #hw-signing {
-    background: #35343A;
+}
+#hw-signing {
     background: #222029;
-    padding: 48px 0 0;
-  }
+}
 
 .banner-logo {
     width: 279px;

@@ -152,6 +152,9 @@ p {
   text-decoration: none !important;
 }
 
+.bottom-link a:hover{
+  opacity: 0.5;
+}
 
 .menu-active>a {
   color: white !important;
