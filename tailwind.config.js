@@ -12,6 +12,7 @@ module.exports = {
           lineHeight: 'normal',
           fontWeight: 400,
         }],
+        'h3': ['1.5rem'],
       },
     },
     colors: {
