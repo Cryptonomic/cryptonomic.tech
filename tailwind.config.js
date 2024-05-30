@@ -25,6 +25,7 @@ module.exports = {
       'cardBody': '#333333',
       'borderBg': 'rgba(255, 255, 255, 0.25)',
       'btnBg': 'rgba(255, 255, 255, 0.05)',
+      'footerBg': 'rgba(255, 255, 255, 0.02)',
     },
   },
   plugins: [],

@@ -11,9 +11,6 @@
   <link href="img/logo_top.png" rel="icon">
   <link href="img/logo_top.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
-
   <!-- Tailwind CSS Files -->
   <link href="./output.css" rel="stylesheet">
 
@@ -39,21 +36,21 @@
 </head>
 
 <body>
-  <div class="h-full p-4 sm:p-14 pb-8">
+  <div class="h-full">
     <!--==========================
       Header
     ============================-->
-    <header class="flex flex-col items-center pb-[3.25rem]">
+    <header class="flex flex-col items-center pt-4 px-4 sm:pt-14 sm:px-14 pb-[3.5625rem]">
       <!--==========================
         Navigation
       ============================-->
       <nav class="flex gap-8">
-        <a> Home </a>
-        <a> Work </a>
-        <a> Contact </a>
+        <a href="/" class="font-bold"> Home </a>
+        <a href="/work.html"> Work </a>
+        <a href="/contact.html"> Contact </a>
       </nav>
 
-      <div class="w-48 h-20 mt-[4.125rem] mb-[1.625rem]">
+      <div class="w-48 h-20 mt-[4.0625rem] mb-[1.625rem]">
         <img
           src="./assets/img/cryptonomicLogo.svg"
           alt="cryptonomic"
@@ -61,18 +58,15 @@
         />
       </div>
 
-      <h1 class="text-h1 text-center">
-        Intelligent infrastructure for
-        <!--========= Hack =========-->
-        <span class="hidden sm:block leading-[0] "> <br /> </span>
-        a decentralizing world
+      <h1 class="sm:text-h1 text-center xl:px-[21.5rem]">
+        Intelligent infrastructure for a decentralizing world
       </h1>
 
-      <div class="px-4 sm:p-0 sm:w-[44.25rem] text-center text-lg ">
-        <p class="px-2 pt-8">
+      <div class="text-center px-4 xl:px-72">
+        <p class="pt-10">
           Since 2017, Cryptonomic has built innovative software that embraces all aspects of decentralized technology.
         </p>
-        <p class="px-4 pt-8">
+        <p class="pt-[.8125rem]">
           Our team has expertise in building sophisticated, mission-critical products in both enterprise and consumer environments.
           We believe that software should be built thoughtfully with a focus on the people and communities it reaches.
         </p>
@@ -82,15 +76,15 @@
     <!--==========================
       Main
     ============================-->
-    <main class="sm:pl-14 lg:pl-[7.875rem] lg:pr-28 xl:pr-[8.0625rem]">
+    <main class="px-4 sm:px-14 xl:pl-[11.375rem] xl:pr-[11.5625rem] pb-[6.875rem]">
       <!--==========================
         Recent Work Section
       ============================-->
-      <section class="py-20 border-y border-borderBg">
-        <h2 class="text-h2 pb-[2.0625rem]"> Recent Work </h2>
+      <section class="py-20 md:pl-[3.875rem] border-y border-borderBg">
+        <h2 class="sm:text-h2 pb-6"> Recent Work </h2>
 
         <!--========= Projects =========-->
-        <div class='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-6 gap-[2.375rem]'> <!--  gap-[2.375rem] -->
+        <div class='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 place-items-center sm:place-items-start'>
           <!--==========================
             Persimmon
           ============================-->
@@ -162,36 +156,47 @@
         </div>
 
         <!--========= View All Button =========-->
-        <button class="bg-btnBg w-[12.25rem] flex justify-center mx-auto mt-[4.1875rem] p-6 text-lg"> View All  >>>>> </button>
+        <a href="/work.html" class="bg-btnBg font-archivo-black w-[12.25rem] flex justify-center mx-auto mt-[4.1875rem] p-6 text-lg"> View All  >>>>> </a>
       </section>
 
       <!--==========================
         Services Section
       ============================-->
       <section class="pt-[3.8125rem] pb-20 border-y border-borderBg">
-        <div class="flex flex-col lg:flex-row gap-4 xl:gap-[7.75rem] xl:pl-[8.25rem]">
-          <ul role="list" class="w-[28.5rem] space-y-3 list-disc list-inside marker:text-[0.625rem] ">
-            <h3 class="text-h3"> Services </h3>
+        <div class="flex flex-col lg:flex-row gap-4 xl:gap-[7.75rem] xl:pl-[8.25rem] pb-12">
+          <ul role="list" class="sm:w-[28.5rem] space-y-3 list-disc list-inside marker:text-[0.625rem] ">
+            <h3 class="sm:text-h3"> Services </h3>
             <li class="pl-2 text-lg"> Blockchain strategy consulting </li>
             <li class="pl-2 text-lg"> Product development and deployment </li>
             <li class="pl-2 text-lg"> Smart contract design </li>
             <li class="pl-2 text-lg"> Smart contract audits </li>
           </ul>
           <ul role="list" class="space-y-3 list-disc list-inside marker:text-[0.625rem] ">
-            <h3 class="text-h3"> Focus Areas </h3>
+            <h3 class="sm:text-h3"> Focus Areas </h3>
             <li class="pl-2 text-lg"> Decentralized Applications </li>
             <li class="pl-2 text-lg"> Institutional Finance </li>
             <li class="pl-2 text-lg"> Data Privacy </li>
             <li class="pl-2 text-lg"> Functional Programming </li>
           </ul>
         </div>
+
+        <p class="pt-12 md:px-[5.71875rem] xl:pl-[7.625rem] xl:pr-[150px] text-lg text-center border-t border-borderBg">
+          Our team has substantial experience working across varied technological environments including; institutional finance, art institutions, biotechnology and machine learning.
+          Get in touch with us to discuss any bespoke services.
+        </p>
       </section>
     </main>
 
     <!--==========================
       Footer
     ============================-->
-    <footer></footer>
+    <footer class="bg-footerBg text-lg flex flex-col sm:flex-row gap-6 py-8 justify-center items-center">
+        <a href="https://github.com/Cryptonomic" target="_blank" rel="noopener noreferrer" class="underline"> Github </a>
+        <a href="https://twitter.com/CryptonomicTech" target="_blank" rel="noopener noreferrer" class="underline"> Twitter </a>
+        <a href="https://www.linkedin.com/company/cryptonomic" target="_blank" rel="noopener noreferrer" class="underline"> Linkedin </a>
+        <a href="https://medium.com/the-cryptonomic-aperiodical" target="_blank" rel="noopener noreferrer" class="underline"> Medium </a>
+        <a href="https://discourse.cryptonomic.tech/" target="_blank" rel="noopener noreferrer" class="underline"> Discourse </a>
+    </footer>
   </div>
 
 
