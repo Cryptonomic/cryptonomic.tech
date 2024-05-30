@@ -3,6 +3,9 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        'archivo-black': ['"Archivo Black"', 'sans-serif'],
+      },
       fontSize: {
         'h1': ['2.5rem', {
           lineHeight: 'normal',
