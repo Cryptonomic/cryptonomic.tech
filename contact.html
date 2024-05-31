@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CRYPTONOMIC - Contact</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="./assets/img/logo_top.png" rel="icon">
+  <link href="./assets/img/logo_top.png" rel="apple-touch-icon">
+
+  <!-- Tailwind CSS Files -->
+  <link href="./output.css" rel="stylesheet">
+
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//matomo.cryptonomic-infra.tech/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '3']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+</head>
+
+<body>
+  <div class="h-full">
+    <!--==========================
+      Header
+    ============================-->
+    <header class="flex flex-col items-center pt-4 sm:pt-14">
+      <!--==========================
+        Navigation
+      ============================-->
+      <nav class="flex gap-8">
+        <a href="/"> Home </a>
+        <a href="/work.html"> Work </a>
+        <a href="/contact.html" class="font-bold"> Contact </a>
+      </nav>
+    </header>
+
+    <!--==========================
+      Main
+    ============================-->
+    <main class="px-4 sm:px-20 xl:pl-[15.0625rem] xl:pr-[9.1875rem]">
+      <h1 class="text-[2rem] pt-[5.125rem] pb-2 lg:mr-[6.0625rem] border-b border-borderBg"> Get in Touch </h1>
+
+      <div class="flex flex-col lg:flex-row gap-9 pt-5 2xl:justify-between">
+        <div class="flex flex-col gap-10 pt-3">
+          <!--==========================
+            Address
+          ============================-->
+          <div>
+            <p class="font-bold pb-[0.8125rem]"> Address </p>
+            <ul class="text-sm">
+              <li> 456 Johnson Ave. </li>
+              <li> Suite 216 </li>
+              <li> Brooklyn, NY 11237 </li>
+              <li> United States </li>
+            </ul>
+          </div>
+
+          <!--==========================
+            Email
+          ============================-->
+          <div>
+            <p class="font-bold pb-[0.8125rem]"> Email </p>
+            <p> Info@cryptonomic.tech </p>
+            <div class="bg-btnBg mt-10 p-2 text-sm">
+              <p>
+                For technical support for one of our products, visit our
+                <a href="https://discourse.cryptonomic.tech/" target="_blank" rel="noopener noreferrer" class="underline"> Discourse </a> site
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--==========================
+          Google Map
+        ============================-->
+        <div id="map" class="w-72 h-44 sm:w-[32.125rem] sm:h-[19.875rem]"></div>
+      </div>
+    </main>
+
+    <!--==========================
+      Footer
+    ============================-->
+    <div class="absolute bottom-0 w-full">
+      <footer class="bg-footerBg text-lg font-['Avenir'] flex flex-col sm:flex-row gap-6 py-8 justify-center items-center">
+          <a href="https://github.com/Cryptonomic" target="_blank" rel="noopener noreferrer" class="underline"> Github </a>
+          <a href="https://twitter.com/CryptonomicTech" target="_blank" rel="noopener noreferrer" class="underline"> Twitter </a>
+          <a href="https://www.linkedin.com/company/cryptonomic" target="_blank" rel="noopener noreferrer" class="underline"> Linkedin </a>
+          <a href="https://medium.com/the-cryptonomic-aperiodical" target="_blank" rel="noopener noreferrer" class="underline"> Medium </a>
+          <a href="https://discourse.cryptonomic.tech/" target="_blank" rel="noopener noreferrer" class="underline"> Discourse </a>
+      </footer>
+    </div>
+  </div>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- TODO: update map address -->
+  <script>
+    function initMap() {
+      var label = 'Cryptonomic Inc';
+      var position = {lat: 40.707272, lng: -73.933594}; // TODO: update lat and long
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 16,
+        center: position,
+        mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                    'styled_map']
+          }
+      });
+
+      var contentString = '<div id="content" style="color:black;">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">Cryptonomic Inc</h1>'+
+          '<div id="bodyContent">'+
+          '<p><b>Address:</b>'+
+          '456 Johnson Ave. Suite 216, Brooklyn, NY 11237</p>'+
+          '</div>'+
+          '</div>';
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+
+      var marker = new google.maps.Marker({
+        position: position,
+        label: {
+          text: label,
+          color: 'gray',
+          fontSize: "18px"
+        },
+        map: map,
+        title: 'Cryptonomic Inc'
+      });
+
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
+    }
+
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvn6N_9AZXiYeZTAYgsRnGHPvYW5g9ar0&callback=initMap">
+  </script>
+</body>
+</html>
