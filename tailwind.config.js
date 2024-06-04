@@ -26,6 +26,7 @@ module.exports = {
       'borderBg': 'rgba(255, 255, 255, 0.25)',
       'btnBg': 'rgba(255, 255, 255, 0.05)',
       'footerBg': 'rgba(255, 255, 255, 0.02)',
+      'link': '#649DFF',
     },
   },
   plugins: [],
