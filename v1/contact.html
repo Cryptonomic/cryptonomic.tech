@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CRYPTONOMIC - Contact</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/logo_top.png" rel="icon">
+  <link href="img/logo_top.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/contact.css" rel="stylesheet">
+  <link href="css/indexStyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@1.0.0/css/brand.min.css">
+
+  <!-- =======================================================
+    Theme Name: Regna
+    Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+	
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//matomo.cryptonomic-infra.tech/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '3']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+	
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">    
+    <div class="container header-container">   
+      <div id="logo" class="pull-left">
+        <a href="./index.html"><img src="img/logo.png" alt="" title="" class="logo"/></img></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./finance.html">Finance</a></li>
+          <li><a href="./developers.html">Developers</a></li>
+          <li><a href="./galleon.html">Galleon</a></li> 
+          <li><a href="./tezos.html">Tezos</a></li>
+          <li><a href="./usertools.html">User Tools</a></li>
+          <li><a href="./support.html">Support</a></li>      
+          <li><a href="./training.html">Training</a></li> 
+          <li class="menu-active"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <section id="main">
+    <div class="contact-container">
+        <div class="d-flex">
+          <p class="large_text underline">Contact</p>
+        </div>
+        <p class = "normal_text ">For technical support, see the <a href="support.html">support page</a>.</p>
+        <p class = "normal_text">For all other inquiries, please contact us at <a href="mailto:info@cryptonomic.tech">info@cryptonomic.tech</a>. We do not accept support requests at this email address.</p>
+	<p class = "normal_text">We are located at:</p>
+        <p class = "support_normal_text margin_custom_right"><img src="./img/location_icon.svg" class="location_icon"/> 100 Bogart Street, Brooklyn, NY 11206 USA</p> 
+        <div id="map"></div>
+
+        <div class="bottom-link">
+          <a href="https://twitter.com/CryptonomicTech" class="mx-2" role="button"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+          <a href="https://github.com/Cryptonomic" class="mx-2" role="button"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+          <a href="https://matrix.to/#/!heGqMNcsOSHGPxrMJs:cryptonomic.tech" class="mx-2" role="button"><i class="cib-riot"></i></a>
+          <a href="https://medium.com/the-cryptonomic-aperiodical" class="mx-2" role="button"><img src='./img/m_icon.svg' class="m_icon" aria-hidden="true" /></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script> 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function initMap() {
+      var label = 'Cryptonomic Inc';
+      var position = {lat: 40.707272, lng: -73.933594};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 16,
+        center: position,       
+        mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                    'styled_map']
+          }
+      });
+
+      var contentString = '<div id="content" style="color:black;">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">Cryptonomic Inc</h1>'+
+          '<div id="bodyContent">'+
+          '<p><b>Address:</b>'+
+          '100 Bogart St, Brooklyn, NY 11206</p>'+         
+          '</div>'+
+          '</div>';
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+
+      var marker = new google.maps.Marker({
+        position: position,
+        label: {
+          text: label,
+          color: 'gray',
+          fontSize: "18px"
+        },
+        map: map,
+        title: 'Cryptonomic Inc'
+      });      
+
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
+    }
+
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvn6N_9AZXiYeZTAYgsRnGHPvYW5g9ar0&callback=initMap">
+  </script>
+
+</body>
+</html>

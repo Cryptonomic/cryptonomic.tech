@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CRYPTONOMIC - Galleon</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/logo_top.png" rel="icon">
+  <link href="img/logo_top.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/gallenonStyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@1.0.0/css/brand.min.css">
+  
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//matomo.cryptonomic-infra.tech/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '3']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+</head>
+<body>
+  <!--==========================
+  Header
+  ============================-->
+    <header id="header">    
+        <div class="container header-container">   
+        <div id="logo" class="pull-left">
+            <a href="./index.html"><img src="img/logo.png" alt="" title="" class="logo"/></img></a>
+            <!-- Uncomment below if you prefer to use a text logo -->       
+        </div>
+        
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./finance.html">Finance</a></li>
+              <li><a href="./developers.html">Developers</a></li>
+              <li class="menu-active"><a href="./galleon.html">Galleon</a></li> 
+              <li><a href="./tezos.html">Tezos</a></li>
+              <li><a href="./usertools.html">User Tools</a></li>
+              <li><a href="./support.html">Support</a></li>      
+              <li><a href="./training.html">Training</a></li> 
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav><!-- #nav-menu-container -->
+        </div>
+    </header><!-- #header -->
+
+  <!--==========================
+    Galleon Section
+  ============================-->
+    <section id="hero">
+        <section id="hero-before"></section>
+        <div class="galleon">
+            <div class="container-fluid h-100">
+                <div class="row h-100 justify-content-between align-items-center">
+                    <div class="col-xl-6 col-lg-8 col-md-6">
+                        <h1 id="title" class="title">
+                            Galleon
+                        </h1>
+                        <p class="sub-title"> 
+                            A Smart Wallet for Tezos
+                        </p>
+                        <p>
+                            Galleon is a software wallet for the Tezos blockchain. It is a deployment of Tezori (T2), 
+                            an open source desktop wallet framework for Tezos, which runs on 
+                            <a href="https://nautilus.cloud/" target="_blank" class="link-underline text-white"> 
+                            Cryptonomic infrastructure.</a> Galleon for desktop supports hardware signing and is 
+                            translated into eight languages with releases available for Mac, Windows and Linux. <br><br>
+                            Galleon Mobile is currently available on iOS with Android coming soon!
+                        </p>
+                    </div>
+                    <div class="col-xl-6 col-lg-4 col-md-6 d-flex justify-content-center">
+                        <img src="img/banner_logo.svg" alt="banner-logo" class="banner-logo" title=""/>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 col-lg-5 col-md-5 col-sm-3 dropdown show mt-3">
+                            <a class="btn filler-btn" href="#" role="button" id="dropdownMenuLink" data-flip ="false" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Download 
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li class="dropdown-header">Galleon for Desktop</li>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between" href="https://apps.apple.com/us/app/galleon-wallet/id1511962480" target="_blank">
+                                        <span><img src="img/apple-filled.svg" alt="apple-logo"> macOS</span>
+                                        <p>App Store</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between" href=" https://www.microsoft.com/en-us/p/galleon/9mt4b7r52d0g" target="_blank">
+                                        <span><img src="img/windows-filled.svg" alt="windows-logo"> Windows</span>
+                                        <p>Microsoft Store</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between" href=" https://snapcraft.io/galleon" target="_blank">
+                                        <span><img src="img/linux-filled.svg" alt="linux-logo"> Linux</span>
+                                        <p>Snap Store</p>
+                                    </a>
+                                </li>
+                                <p class="dropdown-header">Galleon Mobile</p>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between" href=" https://apps.apple.com/us/app/galleon-mobile-wallet/id1521872814" target="_blank">
+                                        <span><img src="img/apple-filled.svg" alt="apple-logo">iOS</span>
+                                        <p>App Store</p>
+                                    </a>
+                                </li>
+                                <div class="dropdown-divider"></div>
+                                <p class="dropdown-header"> Releases, Downloads and MD5 checksums </p>
+                                <li>
+                                    <a class="dropdown-item d-flex justify-content-between" href="https://github.com/Cryptonomic/Deployments/wiki/Galleon:-Releases" target="_blank">
+                                        <p><img src="img/code.svg" alt="code"> View Direct Downloads on Github</p>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="col-xl-2 col-lg-1 col-md-1 col-sm-3"></div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 mt-3">
+                        <a href="#tutorial" class="btn filler-btn">
+                            Tutorials
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 mt-3">
+                        <a href="https://discourse.cryptonomic.tech/c/public/galleon-ext/22" class="btn filler-btn">
+                            FAQ & Support
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>
+  
+  <!--==================================
+    Desktop System Requirements Section
+  ===================================-->
+
+  <section class="hero">
+    <div class="container-fluid h-100">
+      <div id="sys-specs" class="min-hero">
+        <p class="font-size-lg text-center"> Desktop System Requirements </p>
+        <div class="row justify-content-around pt-3 mx-0">
+          <div class="col-xl-4 col-md-4 col-lg-4 text-center">
+            <svg class="my-3" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="56" height="56" rx="8" fill="white"/>
+                <path d="M37.1953 28.9258C37.1797 26.2617 38.3867 24.2539 40.8242 22.7734C39.4609 20.8203 37.3984 19.7461 34.6797 19.5391C32.1055 19.3359 29.2891 21.0391 28.2578 21.0391C27.168 21.0391 24.6758 19.6094 22.7148 19.6094C18.668 19.6719 14.3672 22.8359 14.3672 29.2734C14.3672 31.1758 14.7148 33.1406 15.4102 35.1641C16.3398 37.8281 19.6914 44.3555 23.1875 44.25C25.0156 44.207 26.3086 42.9531 28.6875 42.9531C30.9961 42.9531 32.1914 44.25 34.2305 44.25C37.7578 44.1992 40.7891 38.2656 41.6719 35.5938C36.9414 33.3633 37.1953 29.0625 37.1953 28.9258ZM33.0898 17.0117C35.0703 14.6602 34.8906 12.5195 34.832 11.75C33.082 11.8516 31.0586 12.9414 29.9062 14.2813C28.6367 15.7188 27.8906 17.4961 28.0508 19.5C29.9414 19.6445 31.668 18.6719 33.0898 17.0117Z" fill="#2D2C31"/>
+            </svg>                                    
+            <p>macOS 10.15 or higher</p><br>
+            <p>64-bit</p>
+          </div>
+          <div class="col-xl-4 col-md-4 col-lg-4 text-center">
+              <svg class="my-3" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="56" height="56" rx="8" fill="white"/>
+                  <path d="M28.4609 15.4766V26.7617H43.3828V13.0039L28.4609 15.4766ZM28.4609 40.5625L43.3828 42.9922V29.2422H28.4609V40.5625ZM12.6914 26.7578H25.3047V15.8867L12.6914 17.9766V26.7578ZM12.6914 38.1016L25.3047 40.1562V29.2422H12.6914V38.1016Z" fill="#2D2C31"/>
+              </svg>                                    
+              <p>Windows 10 version 14316.0 or higher<br>
+                      (Windows 10s not supported)
+              </p>
+              <p>64-bit</p>
+          </div>
+          <div class="col-xl-4 col-md-4 col-lg-4 text-center ">
+              <svg class="my-3" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="56" height="56" rx="8" fill="white"/>
+                  <path d="M28.8398 8C28.5798 8 28.3135 8.01375 28.0385 8.03375C20.9948 8.5925 22.8635 16.0475 22.7585 18.5338C22.6285 20.35 22.2585 21.7888 21.0085 23.5675C19.5298 25.3188 17.4598 28.1513 16.4773 31.0988C16.016 32.485 15.7935 33.9125 16.0023 35.2537C15.9236 35.312 15.8591 35.3872 15.8135 35.4738C15.3835 35.9237 15.0635 36.4775 14.7123 36.8738C14.381 37.205 13.906 37.3175 13.3835 37.5387C12.8635 37.765 12.2835 37.9875 11.9448 38.6775C11.7948 38.9912 11.716 39.3287 11.7235 39.6812C11.7235 40.0062 11.7698 40.345 11.8148 40.5725C11.9135 41.2363 12.0098 41.7837 11.8798 42.1875C11.4635 43.3188 11.4185 44.0938 11.7048 44.6613C11.996 45.2213 12.596 45.4425 13.266 45.665C14.621 45.9963 16.4498 45.8913 17.896 46.66C19.4373 47.4412 21.0073 47.78 22.2573 47.4487C22.6884 47.3521 23.0926 47.1605 23.4405 46.8881C23.7884 46.6157 24.0713 46.2692 24.2685 45.8737C25.2448 45.8675 26.3185 45.4237 28.0322 45.3138C29.1973 45.215 30.656 45.7625 32.3285 45.645C32.3735 45.8737 32.4322 45.9762 32.5235 46.205V46.2113C33.1735 47.5062 34.3785 48.0925 35.6685 47.995C36.9497 47.8913 38.3172 47.1038 39.4235 45.815C40.4785 44.545 42.2297 44.01 43.3885 43.315C43.9685 42.9813 44.4372 42.5337 44.4697 41.8887C44.5085 41.225 44.1385 40.535 43.2847 39.5975V39.4338L43.2785 39.4275C42.9922 39.0963 42.8622 38.5363 42.7122 37.8862C42.5685 37.215 42.4122 36.5775 41.8922 36.1413C41.7872 36.05 41.6835 36.03 41.5735 35.92C41.4811 35.8549 41.3725 35.8168 41.2597 35.81C41.976 33.68 41.696 31.565 40.966 29.6562C40.081 27.3063 38.5247 25.2563 37.346 23.85C36.0172 22.1763 34.716 20.5887 34.7422 18.2388C34.7872 14.65 35.1385 8.0175 28.8373 8.00375L28.8398 8ZM29.7185 13.6762H29.7448C30.096 13.6762 30.401 13.7812 30.7148 14.0025C31.0335 14.2288 31.2685 14.5562 31.4435 14.8937C31.6197 15.3238 31.7122 15.655 31.7235 16.0975C31.7235 16.0662 31.7297 16.0325 31.7297 16.0013V16.1762C31.7297 16.1625 31.7235 16.1512 31.7235 16.1375L31.7173 16.0975C31.7173 16.5025 31.6335 16.9062 31.471 17.2762C31.3938 17.4869 31.2713 17.678 31.1123 17.8363C31.0673 17.8112 31.021 17.785 30.9685 17.765C30.7935 17.6862 30.6373 17.6613 30.4935 17.545C30.3752 17.4976 30.2531 17.4604 30.1285 17.4338C30.2073 17.3375 30.3698 17.2125 30.4348 17.1025C30.5198 16.8938 30.5648 16.6663 30.5785 16.4325V16.3988C30.582 16.1731 30.5465 15.9485 30.4735 15.735C30.4023 15.5138 30.3123 15.4012 30.1748 15.1812C30.031 15.07 29.8948 14.96 29.7248 14.96H29.6998C29.5435 14.96 29.406 15.005 29.2635 15.1812C29.1071 15.3354 28.9908 15.5255 28.9248 15.735C28.8339 15.945 28.7831 16.1701 28.7748 16.3988V16.4325C28.7748 16.5813 28.7885 16.7312 28.806 16.8813C28.481 16.7712 28.0773 16.6525 27.791 16.5425C27.7754 16.4327 27.7667 16.3221 27.7648 16.2112V16.1775C27.7521 15.7373 27.837 15.2997 28.0135 14.8963C28.1498 14.5313 28.3973 14.2175 28.7298 14.01C29.0148 13.7963 29.3598 13.6788 29.7185 13.6788V13.6762ZM24.7835 13.775H24.8423C25.0773 13.775 25.2923 13.8537 25.5073 13.9963C25.7535 14.2112 25.951 14.4775 26.081 14.77C26.231 15.1037 26.3148 15.4413 26.341 15.8837V15.89C26.3473 16.1112 26.3473 16.23 26.3348 16.3337V16.47L26.1985 16.5087C25.9448 16.6 25.7435 16.73 25.5398 16.8425C25.5598 16.6925 25.5598 16.5425 25.546 16.3988V16.3725C25.5273 16.1525 25.481 16.0413 25.4098 15.8188C25.3564 15.6477 25.26 15.4931 25.1298 15.37C25.0479 15.297 24.9405 15.2593 24.831 15.265H24.791C24.6748 15.2712 24.576 15.33 24.486 15.4862C24.3758 15.613 24.3058 15.7696 24.2848 15.9362C24.2385 16.1112 24.2248 16.3 24.2448 16.49V16.5087C24.2648 16.7375 24.3035 16.8488 24.381 17.0688C24.4313 17.2383 24.5258 17.3915 24.6548 17.5125C24.6748 17.5325 24.6885 17.5462 24.7135 17.5512C24.5973 17.65 24.5185 17.67 24.4223 17.78C24.356 17.8263 24.286 17.885 24.201 17.8988C24.0276 17.6902 23.8748 17.4654 23.7448 17.2275C23.5853 16.8771 23.4969 16.4985 23.4848 16.1138C23.4595 15.7377 23.5036 15.3602 23.6148 15C23.7135 14.675 23.8698 14.3688 24.0898 14.1088C24.3048 13.8875 24.5198 13.7775 24.786 13.7775L24.7835 13.775ZM27.0685 16.62C27.6223 16.62 28.2873 16.7238 29.0935 17.2838C29.5823 17.6175 29.9673 17.7338 30.8523 18.0588C31.2822 18.2875 31.5285 18.5087 31.6523 18.73V18.5087C31.7116 18.6295 31.7446 18.7615 31.7492 18.8959C31.7537 19.0304 31.7296 19.1643 31.6785 19.2887C31.4698 19.81 30.8185 20.3638 29.9023 20.695V20.7013C29.4585 20.9225 29.0685 21.255 28.6123 21.4762C28.151 21.6975 27.6285 21.965 26.926 21.92C26.6716 21.9312 26.4174 21.8934 26.1773 21.8088C25.9921 21.7105 25.8138 21.5998 25.6435 21.4775C25.3185 21.2562 25.0385 20.9237 24.6223 20.7025V20.6962H24.616C23.9448 20.2862 23.5873 19.8425 23.4698 19.5112C23.3598 19.0625 23.4635 18.7312 23.796 18.51C24.166 18.2887 24.426 18.06 24.596 17.95C24.771 17.8263 24.8373 17.78 24.8898 17.735H24.896V17.7288C25.176 17.39 25.6173 16.9475 26.296 16.725C26.5223 16.6663 26.7848 16.6213 27.0698 16.6213L27.0685 16.62ZM31.7297 20.1862C32.3298 22.55 33.7297 25.9813 34.6285 27.6413C35.1035 28.5325 36.0535 30.4075 36.4635 32.6813C36.7235 32.675 37.0098 32.7125 37.3172 32.7913C38.3972 30.005 36.4123 27.01 35.5072 26.1763C35.136 25.845 35.1173 25.6225 35.2985 25.6225C36.2823 26.5075 37.5697 28.2413 38.0385 30.2125C38.2535 31.1038 38.3072 32.0563 38.0785 32.9988C38.1885 33.0438 38.2997 33.1025 38.4172 33.1087C40.136 34.0025 40.7735 34.6725 40.4673 35.6737V35.6025C40.371 35.5975 40.266 35.6025 40.1685 35.6025H40.1423C40.3972 34.8225 39.8372 34.2225 38.366 33.5588C36.8422 32.895 35.6248 32.9987 35.416 34.3337C35.4013 34.4092 35.3929 34.4857 35.391 34.5625C35.2722 34.6012 35.156 34.6462 35.0397 34.6663C34.3235 35.1163 33.9385 35.7862 33.7185 36.6462C33.5035 37.5375 33.4385 38.5725 33.3798 39.765C33.3398 40.325 33.0935 41.1637 32.8447 42.0163C30.3447 43.8062 26.8748 44.5812 23.9335 42.5762C23.7435 42.2512 23.5223 41.9512 23.2623 41.685C23.1374 41.4781 22.9819 41.2914 22.801 41.1312C23.106 41.1312 23.3673 41.08 23.576 41.02C23.8144 40.9051 24.0019 40.7061 24.1023 40.4613C24.2785 40.0175 24.1023 39.3013 23.5223 38.52C22.951 37.7463 21.9735 36.8663 20.5473 35.9888C19.4935 35.325 18.901 34.5375 18.6273 33.6637C18.3535 32.7725 18.3923 31.8538 18.601 30.9238C19.011 29.14 20.0598 27.4025 20.731 26.3137C20.906 26.21 20.7898 26.5425 20.0473 27.9425C19.3885 29.1925 18.146 32.1025 19.8435 34.3613C19.9088 32.7116 20.2752 31.0878 20.9248 29.57C21.861 27.4412 23.8285 23.7312 23.9848 20.7887C24.0635 20.8538 24.3435 21.0175 24.466 21.1275C24.8248 21.3488 25.0973 21.6812 25.4498 21.9025C25.801 22.2337 26.2435 22.4625 26.9085 22.4625C26.9735 22.4688 27.0323 22.4688 27.0898 22.4688C27.7735 22.4688 28.3085 22.2475 28.7498 22.025C29.231 21.7963 29.6235 21.465 29.986 21.355H29.9923C30.7673 21.1337 31.386 20.6838 31.731 20.1888L31.7297 20.1862ZM35.376 35.1163C35.441 36.1175 35.9497 37.1925 36.8472 37.4125C37.8235 37.6338 39.236 36.8587 39.8285 36.1375L40.1797 36.1238C40.706 36.11 41.1435 36.1375 41.591 36.5675L41.5972 36.5737C41.9422 36.905 42.106 37.4587 42.2485 38.0325C42.3922 38.7025 42.5022 39.3337 42.9322 39.8088C43.7385 40.6875 44.006 41.3188 43.9935 41.71C43.9672 42.145 43.6797 42.3662 43.1597 42.6987C42.111 43.37 40.2497 43.8838 39.0647 45.3175C38.0347 46.5475 36.7797 47.2175 35.671 47.3025C34.5647 47.3937 33.6073 46.9713 33.0473 45.8063L33.041 45.8C32.6898 45.135 32.8398 44.0938 33.1323 42.9863C33.426 41.8725 33.8485 40.7412 33.9072 39.8225C33.966 38.6313 34.031 37.5963 34.226 36.7938C34.4273 36.0187 34.741 35.465 35.301 35.16L35.3723 35.12L35.376 35.1163ZM17.3485 35.2H17.3685C17.4598 35.2 17.5448 35.2062 17.6285 35.2262C18.2535 35.3175 18.8073 35.78 19.3348 36.4762L20.851 39.25L20.8573 39.2562C21.261 40.1413 22.1135 41.0262 22.836 41.985C23.5598 42.98 24.1198 43.8713 24.0548 44.6012V44.615C23.956 45.8512 23.2535 46.5213 22.1798 46.77C21.1048 46.9912 19.646 46.77 18.1885 45.995C16.5748 45.1037 14.6535 45.2137 13.4235 44.9912C12.8123 44.8813 12.4085 44.6525 12.2185 44.3213C12.0373 43.99 12.0298 43.3175 12.4273 42.27V42.265C12.6223 41.705 12.481 41.0088 12.3823 40.3962C12.291 39.7312 12.246 39.2163 12.4535 38.8325C12.7198 38.2725 13.1173 38.1687 13.6048 37.9412C14.0935 37.72 14.6735 37.61 15.1285 37.16H15.1348V37.1537C15.5585 36.7125 15.8785 36.1588 16.2485 35.76C16.5623 35.4212 16.8798 35.2 17.3485 35.2ZM29.2835 20.0763C28.5598 20.4075 27.7073 20.9675 26.8023 20.9675C25.8973 20.9675 25.1873 20.5262 24.6735 20.1925C24.4135 19.9662 24.2048 19.7437 24.0485 19.6325C23.7748 19.4125 23.8073 19.0738 23.9248 19.0738C24.106 19.0988 24.1398 19.3 24.256 19.4125C24.4198 19.5225 24.6148 19.7437 24.8548 19.9662C25.3435 20.2975 25.9948 20.7462 26.801 20.7462C27.6098 20.7462 28.5598 20.2975 29.1323 19.9662C29.4573 19.745 29.8735 19.4125 30.2123 19.1912C30.4723 18.9625 30.461 18.7413 30.6735 18.7413C30.8885 18.7675 30.7335 18.9625 30.4335 19.295C30.1273 19.5238 29.6585 19.855 29.2822 20.0763H29.2835ZM27.4798 17.4338V17.4025C27.4735 17.3687 27.4985 17.3313 27.531 17.3175C27.6473 17.2463 27.8298 17.2712 27.961 17.3238C28.0648 17.3238 28.2273 17.4338 28.2148 17.55C28.201 17.6287 28.071 17.6613 27.986 17.6613C27.896 17.6613 27.8298 17.59 27.7523 17.545C27.6673 17.5188 27.5035 17.5312 27.4785 17.4338H27.4798ZM26.561 17.4338C26.5273 17.5325 26.371 17.5188 26.2873 17.545C26.2085 17.59 26.1435 17.6613 26.0523 17.6613C25.9673 17.6613 25.831 17.6275 25.8235 17.545C25.8123 17.4338 25.9673 17.3238 26.0723 17.3238C26.2085 17.27 26.3773 17.245 26.5073 17.3175C26.5335 17.3313 26.5673 17.3687 26.5535 17.4025V17.4338H26.561Z" fill="#2D2C31"/>
+              </svg>                                    
+              <p>Tested on Ubuntu 20.04</p><br>
+              <p>64-bit</p>
+          </div>
+        </div>
+      </div>
+      <div id="hw-signing" class="min-hero">
+        <p class="font-size-lg text-center py-5 m-0"> Desktop Galleon Supports Hardware Signing </p>
+        <div class="row text-center mx-0">
+          <div class="col-xl-12 col-md-12 col-lg-12 align-items-center">
+              <img src="./img/ledger.svg" class="col-xl-5 col-md-10 col-lg-8 mb-5" alt="ledger">
+              <p class="font-size-sm">
+                  Using a hardware wallet is the safest way to store your crypto. 
+              </p>
+              <p class="font-size-md">
+                  Need a Ledger device? 
+                  <a href="https://shop.ledger.com/pages/ledger-nano-x?r=631fb45e26da" class="text-white link-underline" target="_blank">
+                      Get it here!
+                  </a> 
+              </p>               
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Tutorials Section
+  ============================-->
+    <section id="tutorial" class="hero">
+            <div class="hero-child">
+                <div class="container-fluid h-100">
+                    <div class="row justify-content-around align-items-center mb-5">
+                        <h4 id="title" class="sub-title text-center mb-3 font-xlg">
+                            Galleon Tutorials 
+                        </h4>                            
+                    </div>
+                    <div class="row justify-content-around">
+                      <div class="col-xl-10 col-lg-12 col-md-11 p-3">
+                        <p class="font-size-md">Creating a new account</p>                            
+                        <iframe width="100%" height="504" 
+                            src="https://www.youtube.com/embed/lLqCQUDaI1o?modestbranding=1">
+                        </iframe>
+                      </div>
+                    </div>
+                    <div class="row justify-content-around ">
+                        <div class="col-xl-4 col-lg-6 col-md-5 p-3">
+                            <p class="font-size-md">Creating and loading wallets</p>
+                            <iframe width="100%" height="248" 
+                                src="https://www.youtube.com/embed/XWDy06FqKIg?modestbranding=1">
+                            </iframe>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-5 p-3">
+                          <p class="font-size-md">Migrating a Tezos account from Tezbox</p>
+                          <iframe width="100%" height="248" 
+                              src="https://www.youtube.com/embed/fLnOcezCZU0?modestbranding=1" >
+                          </iframe>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around ">
+                        <div class="col-xl-4 col-lg-6 col-md-5 p-3">
+                            <p class="font-size-md">Importing a fundraiser wallet</p>
+                            <iframe width="100%" height="248" 
+                                src="https://www.youtube.com/embed/eD-y1cEwB94?modestbranding=1">
+                            </iframe>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-5 p-3">
+                            <p class="font-size-md">Delegating Tez</p>                           
+                            <iframe width="100%" height="248" 
+                                src="https://www.youtube.com/embed/QBJACuJt5DA?modestbranding=1">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<!--==========================
+    Support Section
+============================-->
+    <!-- <section id="support" >
+        <div class="hero-child">
+            <div class="container-fluid">
+                <div class="row justify-content-around align-items-center pt-5">
+                    <h4 id="title" class="sub-title text-center font-xlg pt-0">
+                        FAQ and Support 
+                    </h4>
+                </div> 
+                <p class="text-center">
+                    If you have any questions about Galleon, your account or feedback, please reach out to us! 
+                </p>
+                <div class="row justify-content-between">
+                    <div class="col-xl-12 col-md-12 col-lg-12 pt-3">
+                        <div class="d-md-flex flex-row pt-3 pb-7">
+                            <div class="col-xl-4 col-md-4 col-lg-4 font-size-m text-center ">
+                                <img src="./img/cib_zendesk.svg" alt="zendesk-icon">
+                               <p class="mt-3">
+                                Consult the <a href="https://cryptonomic.zendesk.com/hc/en-us" class="link-underline text-white" target="_blank">
+                                FAQ </a> on our Zendesk support portal
+                               </p>
+                            </div>
+                            <div class="col-xl-4 col-md-4 col-lg-4 font-size-m text-center">
+                                <img src="./img/cib_riot.svg" alt="matrix-icon"> 
+                                <p class="mt-3">
+                                    For community-based support, join our 
+                                    <a href="https://matrix.to/#/!heGqMNcsOSHGPxrMJs:cryptonomic.tech" class="link-underline text-white" target="_blank">
+                                    users channel</a> on Matrix / Element
+                                </p>
+                            </div>
+                            <div class="col-xl-4 col-md-4 col-lg-4 font-size-m text-center ">
+                                <img src="./img/carbon_email.svg" alt="email-icon">
+                                <p class="mt-2">
+                                    Email us at  <a href="mailto:support@cryptonomic.tech" class="link-underline text-white" target="_blank">
+                                    support@cryptonomic.tech </a>
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="bottom-link">
+                <a href="https://twitter.com/CryptonomicTech" class="mx-2" role="button"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                <a href="https://github.com/Cryptonomic" class="mx-2" role="button"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                <a href="https://matrix.to/#/!heGqMNcsOSHGPxrMJs:cryptonomic.tech" class="mx-2" role="button"><i class="cib-riot"></i></a>
+                <a href="https://medium.com/the-cryptonomic-aperiodical" class="mx-2" role="button"><img src='./img/m_icon.svg' class="m_icon" aria-hidden="true" /></a>
+            </div> 
+        </div>
+    </section>
+
+    
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script> 
+  <script src="js/main.js"></script>
+
+</body>
+</html>

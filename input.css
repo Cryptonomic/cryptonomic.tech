@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Archivo Black";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./assets/fonts/Archivo_Black/ArchivoBlack-Regular.ttf) format('truetype');
+  }
+  body {
+    font-family: Verdana, system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6, button {
+    font-family: "Archivo Black", Verdana, system-ui, sans-serif;
+  }
+}
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  color: white;
+  background: #2B2B31;
+}
