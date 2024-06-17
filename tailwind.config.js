@@ -17,6 +17,9 @@ module.exports = {
         }],
         'h3': ['1.5rem'],
       },
+      screens: {
+        '3xl': '2000px',
+      },
     },
     colors: {
       'background': '#2B2B31',
