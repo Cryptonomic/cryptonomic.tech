@@ -2270,6 +2270,14 @@ h1, h2, h3, h4, h5, h6, button {
   padding-top: 5.125rem;
 }
 
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
 .text-left {
   text-align: left;
 }
