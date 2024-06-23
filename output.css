@@ -805,8 +805,16 @@ h1, h2, h3, h4, h5, h6, button {
   margin-bottom: 0.75rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mb-\[1\.625rem\] {
@@ -831,22 +839,6 @@ h1, h2, h3, h4, h5, h6, button {
 
 .mt-\[4\.1875rem\] {
   margin-top: 4.1875rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
 }
 
 .box-border {
@@ -964,10 +956,6 @@ h1, h2, h3, h4, h5, h6, button {
   height: 100%;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-48 {
   width: 12rem;
 }
@@ -998,18 +986,6 @@ h1, h2, h3, h4, h5, h6, button {
 
 .max-w-4xl {
   max-width: 56rem;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
-}
-
-.max-w-6xl {
-  max-width: 72rem;
 }
 
 .flex-1 {
@@ -1566,24 +1542,6 @@ h1, h2, h3, h4, h5, h6, button {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -2207,18 +2165,9 @@ h1, h2, h3, h4, h5, h6, button {
   padding-bottom: 1.25rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
 }
 
 .pb-14 {
@@ -2269,16 +2218,12 @@ h1, h2, h3, h4, h5, h6, button {
   padding-bottom: 6.875rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
+.pl-5 {
+  padding-left: 1.25rem;
 }
 
 .pt-0 {
   padding-top: 0px;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .pt-12 {
@@ -2323,26 +2268,6 @@ h1, h2, h3, h4, h5, h6, button {
 
 .pt-\[5\.125rem\] {
   padding-top: 5.125rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pl-0 {
-  padding-left: 0px;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
-.pl-5 {
-  padding-left: 1.25rem;
 }
 
 .text-left {
@@ -2959,14 +2884,6 @@ body {
   }
 }
 
-.marker\:text-\[0\.625rem\] *::marker {
-  font-size: 0.625rem;
-}
-
-.marker\:text-\[0\.625rem\]::marker {
-  font-size: 0.625rem;
-}
-
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2990,18 +2907,6 @@ body {
 }
 
 @media (min-width: 640px) {
-  .sm\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
-  .sm\:ml-\[-0\.5rem\] {
-    margin-left: -0.5rem;
-  }
-
-  .sm\:inline {
-    display: inline;
-  }
-
   .sm\:hidden {
     display: none;
   }
@@ -3036,10 +2941,6 @@ body {
 
   .sm\:w-\[27\.3125rem\] {
     width: 27.3125rem;
-  }
-
-  .sm\:w-\[28\.5rem\] {
-    width: 28.5rem;
   }
 
   .sm\:w-\[33\.25rem\] {
@@ -3098,28 +2999,20 @@ body {
     padding-bottom: 3rem;
   }
 
-  .sm\:pt-14 {
-    padding-top: 3.5rem;
-  }
-
   .sm\:pl-0 {
     padding-left: 0px;
   }
 
-  .sm\:text-h1 {
-    font-size: 2.5rem;
-    line-height: normal;
-    font-weight: 400;
+  .sm\:pt-14 {
+    padding-top: 3.5rem;
   }
 
-  .sm\:text-h2 {
-    font-size: 2rem;
-    line-height: normal;
-    font-weight: 400;
+  .sm\:text-left {
+    text-align: left;
   }
 
-  .sm\:text-h3 {
-    font-size: 1.5rem;
+  .sm\:text-center {
+    text-align: center;
   }
 
   .sm\:text-2xl {
@@ -3132,6 +3025,10 @@ body {
     line-height: 1.5rem;
   }
 
+  .sm\:text-h3 {
+    font-size: 1.5rem;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -3140,10 +3037,6 @@ body {
 @media (min-width: 768px) {
   .md\:mb-0 {
     margin-bottom: 0px;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
   }
 
   .md\:w-auto {
@@ -3189,6 +3082,10 @@ body {
   .lg\:gap-24 {
     gap: 6rem;
   }
+
+  .lg\:text-center {
+    text-align: center;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -3196,18 +3093,34 @@ body {
     margin-left: 24.25rem;
   }
 
-  .xl\:gap-\[7\.75rem\] {
-    gap: 7.75rem;
+  .xl\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .xl\:inline {
+    display: inline;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:flex-col {
+    flex-direction: column;
+  }
+
+  .xl\:items-center {
+    align-items: center;
+  }
+
+  .xl\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .xl\:px-72 {
     padding-left: 18rem;
     padding-right: 18rem;
-  }
-
-  .xl\:px-\[21\.5rem\] {
-    padding-left: 21.5rem;
-    padding-right: 21.5rem;
   }
 
   .xl\:pl-\[1\.75rem\] {
@@ -3238,10 +3151,6 @@ body {
     padding-left: 7.625rem;
   }
 
-  .xl\:pl-\[8\.25rem\] {
-    padding-left: 8.25rem;
-  }
-
   .xl\:pr-\[11\.5625rem\] {
     padding-right: 11.5625rem;
   }
@@ -3260,6 +3169,18 @@ body {
 
   .xl\:pr-\[9\.375rem\] {
     padding-right: 9.375rem;
+  }
+
+  .xl\:pt-4 {
+    padding-top: 1rem;
+  }
+
+  .xl\:text-left {
+    text-align: left;
+  }
+
+  .xl\:text-center {
+    text-align: center;
   }
 }
 
