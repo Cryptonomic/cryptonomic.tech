@@ -984,6 +984,14 @@ h1, h2, h3, h4, h5, h6, button {
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -2270,14 +2278,6 @@ h1, h2, h3, h4, h5, h6, button {
   padding-top: 5.125rem;
 }
 
-.pb-0 {
-  padding-bottom: 0px;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -2963,6 +2963,10 @@ body {
     width: 51.0625rem;
   }
 
+  .sm\:w-full {
+    width: 100%;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -3099,6 +3103,14 @@ body {
 
   .xl\:flex {
     display: flex;
+  }
+
+  .xl\:w-full {
+    width: 100%;
+  }
+
+  .xl\:w-1\/2 {
+    width: 50%;
   }
 
   .xl\:flex-col {
