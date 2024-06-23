@@ -1993,7 +1993,7 @@ h1, h2, h3, h4, h5, h6, button {
 
 .bg-cardBg {
   --tw-bg-opacity: 1;
-  background-color: rgb(196 196 196 / var(--tw-bg-opacity));
+  background-color: rgb(230 230 230 / var(--tw-bg-opacity));
 }
 
 .bg-footerBg {
@@ -3007,14 +3007,6 @@ body {
     padding-top: 3.5rem;
   }
 
-  .sm\:text-left {
-    text-align: left;
-  }
-
-  .sm\:text-center {
-    text-align: center;
-  }
-
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -3081,10 +3073,6 @@ body {
 
   .lg\:gap-24 {
     gap: 6rem;
-  }
-
-  .lg\:text-center {
-    text-align: center;
   }
 }
 
