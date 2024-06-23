@@ -14,21 +14,7 @@
   <!-- Tailwind CSS Files -->
   <link href="./output.css" rel="stylesheet">
 
-  <!-- Matomo -->
-  <script type="text/javascript">
-    var _paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//matomo.cryptonomic-infra.tech/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '3']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <!-- End Matomo Code -->
+
 
 </head>
 
@@ -55,18 +41,27 @@
         />
       </div>
 
-      <h1 class="sm:text-h1 text-center xl:px-[21.5rem]">
-        Intelligent infrastructure for a decentralizing world
+      <h1 class="text-4xl text-center xl:text-left xl:flex xl:flex-col xl:items-center xl:px-20">
+        Intelligent infrastructure for
+        <span class="block xl:inline xl:mt-2">a decentralizing world</span>
       </h1>
-
-      <div class="text-center px-4 xl:px-72">
-        <p class="pt-10">
-          Since 2017, Cryptonomic has built innovative software that embraces all aspects of decentralized technology.
+      <div class="text-center px-4 xl:px-72 pt-4">
+        <p class="pt-[.8125rem] xl:pt-4">
+          Since 2017, Cryptonomic has built innovative software that embraces all aspects of
         </p>
+        <p class="xl:text-center">
+          decentralized technology.
+        </p>     
         <p class="pt-[.8125rem]">
-          Our team has expertise in building sophisticated, mission-critical products in both enterprise and consumer environments.
-          We believe that software should be built thoughtfully with a focus on the people and communities it reaches.
+          Our team has expertise in building sophisticated, mission-critical products in both enterprise          
         </p>
+        <p class="xl:text-center">
+          and consumer environments. We believe that software should be built thoughtfully with a
+        </p>
+        <p class="xl:text-center">
+          focus on the people and communities it reaches.
+        </p>    
+
       </div>
     </header>
 
@@ -78,8 +73,7 @@
         Recent Work Section
       ============================-->
       <section class="py-20 md:pl-[3.875rem] border-y border-borderBg">
-        <h2 class="sm:text-h2 pb-6"> Recent Work </h2>
-
+       <h2 class="text-2xl pb-6 text-center md:text-left">Recent Work</h2>
         <!--========= Projects =========-->
         <div class="flex flex-wrap gap-4 justify-center sm:justify-start">
           <!--==========================
@@ -94,8 +88,8 @@
                   class="w-full h-full"
                 />
               </div>
-              <div class="flex-1 bg-cardBg p-4">
-                <p class="text-cardHeader font-bold pb-4"> Persimmon </p>
+              <div class="flex-1 bg-cardBg p-2">
+                <p class="text-cardHeader font-bold pb-2"> Persimmon </p>
                 <p class="text-cardBody text-sm"> Notifications app for digital assets </p>
               </div>
             </div>
@@ -114,7 +108,7 @@
                 />
               </div>
               <div class="flex-1 bg-cardBg p-4">
-                <p class="text-cardHeader font-bold pb-4"> Rhubarb </p>
+                <p class="text-cardHeader font-bold pb-2"> Rhubarb </p>
                 <p class="text-cardBody text-sm"> Secure digital asset transfers using smart contracts </p>
               </div>
             </div>
@@ -133,7 +127,7 @@
                 />
               </div>
               <div class="flex-1 bg-cardBg p-4">
-                <p class="text-cardHeader font-bold pb-4"> Project Guardian </p>
+                <p class="text-cardHeader font-bold pb-2"> Project Guardian </p>
                 <p class="text-cardBody text-sm"> Demonstrating the applicability of DeFi to institutional finance </p>
               </div>
             </div>
@@ -152,7 +146,7 @@
                 />
               </div>
               <div class="flex-1 bg-cardBg p-4">
-                <p class="text-cardHeader font-bold pb-4"> Monadic DNA </p>
+                <p class="text-cardHeader font-bold pb-2"> Monadic DNA </p>
                 <p class="text-cardBody text-sm"> Privacy-preserving personal genomics using FHE and ZK </p>
               </div>
             </div>
@@ -167,22 +161,28 @@
       <!--==========================
         Services Section
       ============================-->
-      <section class="pt-[3.8125rem]">
-        <div class="flex flex-col lg:flex-row gap-4 xl:gap-[7.75rem] xl:pl-[8.25rem] pb-12">
-          <ul role="list" class="sm:w-[28.5rem] space-y-3 list-disc list-inside marker:text-[0.625rem] ">
-            <h3 class="sm:text-h3"> Services </h3>
-            <li class="pl-2 text-lg"> Blockchain strategy consulting </li>
-            <li class="pl-2 text-lg"> Product development and deployment </li>
-            <li class="pl-2 text-lg"> Smart contract design </li>
-            <li class="pl-2 text-lg"> Smart contract audits </li>
-          </ul>
-          <ul role="list" class="space-y-3 list-disc list-inside marker:text-[0.625rem] ">
-            <h3 class="sm:text-h3"> Focus Areas </h3>
-            <li class="pl-2 text-lg"> Decentralized Applications </li>
-            <li class="pl-2 text-lg"> Institutional Finance </li>
-            <li class="pl-2 text-lg"> Data Privacy </li>
-            <li class="pl-2 text-lg"> Functional Programming </li>
-          </ul>
+      <section class=" pt-[3.8125rem] ">
+        <div class="bg-gray-900 text-white py-8 sm:py-12 px-4 flex items-center justify-center">
+          <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-center items-start md:gap-16 lg:gap-24">
+            <div class="w-full md:w-auto mb-8 md:mb-0">
+              <h3 class="text-xl sm:text-2xl mb-4 ">Services</h3>
+              <ul class="list-disc list-inside">
+                <li class="text-sm sm:text-base">Blockchain strategy consulting</li>
+                <li class="text-sm sm:text-base">Product development and<br class="sm:hidden"> <span class="pl-5 sm:pl-0">deployment</span></li>
+          <li class="text-sm sm:text-base">Smart contract design</li>
+                <li class="text-sm sm:text-base">Smart contract audits</li>
+              </ul>
+            </div>
+            <div class="w-full md:w-auto">
+              <h3 class="text-xl sm:text-2xl mb-4">Focus Areas</h3>
+              <ul class="list-disc list-inside">
+                <li class="text-sm sm:text-base">Decentralized Applications</li>
+                <li class="text-sm sm:text-base">Institutional Finance</li>
+                <li class="text-sm sm:text-base">Data Privacy</li>
+                <li class="text-sm sm:text-base">Functional Programming</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <p class="pt-12 pb-20 md:px-[5.71875rem] xl:pl-[7.625rem] xl:pr-[9.375rem] text-lg text-center border-y border-borderBg">
@@ -207,11 +207,7 @@
 
 
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
+
 
 </body>
 </html>

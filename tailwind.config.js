@@ -23,7 +23,7 @@ module.exports = {
     },
     colors: {
       'background': '#2B2B31',
-      'cardBg': '#C4C4C4',
+      'cardBg': '#E6E6E6',
       'cardHeader': '#222222',
       'cardBody': '#333333',
       'borderBg': 'rgba(255, 255, 255, 0.25)',
