@@ -37,7 +37,7 @@
     <!--==========================
       Header
     ============================-->
-    <header class="flex flex-col items-center pt-4 px-4 sm:pt-14 sm:px-14 pb-[3.5625rem]">
+    <header class="flex flex-col items-center pt-4 px-4 sm:pt-14 sm:px-14 3xl:w-[1440px] 3xl:mx-auto pb-[3.5625rem]">
       <!--==========================
         Navigation
       ============================-->
@@ -49,7 +49,7 @@
 
       <div class="w-48 h-20 mt-[4.0625rem] mb-[1.625rem]">
         <img
-          src="./assets/img/cryptonomicLogo.svg"
+          src="./assets/img/cryptonomicLogo.png"
           alt="cryptonomic"
           class="w-full h-full"
         />
@@ -73,7 +73,7 @@
     <!--==========================
       Main
     ============================-->
-    <main class="px-4 sm:px-14 xl:pl-[11.375rem] xl:pr-[11.5625rem] pb-[6.875rem]">
+    <main class="px-4 sm:px-14 xl:pl-[11.375rem] xl:pr-[11.5625rem] 3xl:w-[1440px] 3xl:mx-auto pb-[6.875rem]">
       <!--==========================
         Recent Work Section
       ============================-->
@@ -81,85 +81,93 @@
         <h2 class="sm:text-h2 pb-6"> Recent Work </h2>
 
         <!--========= Projects =========-->
-        <div class='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 place-items-center sm:place-items-start'>
+        <div class="flex flex-wrap gap-4 justify-center sm:justify-start">
           <!--==========================
             Persimmon
           ============================-->
-          <div class="flex flex-col w-[14.9375rem] h-[18.625rem]">
-            <div class="w-full h-[10.4375rem]">
-              <img
-                src="./assets/img/persimmonPreview.svg"
-                alt="Persimmon Preview"
-                class="w-full h-full"
-              />
+          <a href="/work/persimmon.html">
+            <div class="flex flex-col w-[14.9375rem] h-[18.625rem]">
+              <div class="w-full h-[10.4375rem]">
+                <img
+                  src="./assets/img/persimmonPreview.png"
+                  alt="Persimmon Preview"
+                  class="w-full h-full"
+                />
+              </div>
+              <div class="flex-1 bg-cardBg p-4">
+                <p class="text-cardHeader font-bold pb-4"> Persimmon </p>
+                <p class="text-cardBody text-sm"> Notifications app for digital assets </p>
+              </div>
             </div>
-            <div class="flex-1 bg-cardBg p-4">
-              <p class="text-cardHeader font-bold pb-4"> Persimmon </p>
-              <p class="text-cardBody text-sm"> Notifications app for digital assets </p>
-            </div>
-          </div>
+          </a>
 
           <!--==========================
             Rhubarb
           ============================-->
-          <div class="flex flex-col w-[14.9375rem] h-[18.625rem]">
-            <div class="w-full h-[10.4375rem]">
-              <img
-                src="./assets/img/rhubarbPreview.svg"
-                alt="Rhubarb Preview"
-                class="w-full h-full"
-              />
+          <a href="/work/rhubarb.html">
+            <div class="flex flex-col w-[14.9375rem] h-[18.625rem]">
+              <div class="w-full h-[10.4375rem]">
+                <img
+                  src="./assets/img/rhubarbPreview.png"
+                  alt="Rhubarb Preview"
+                  class="w-full h-full"
+                />
+              </div>
+              <div class="flex-1 bg-cardBg p-4">
+                <p class="text-cardHeader font-bold pb-4"> Rhubarb </p>
+                <p class="text-cardBody text-sm"> Secure digital asset transfers using smart contracts </p>
+              </div>
             </div>
-            <div class="flex-1 bg-cardBg p-4">
-              <p class="text-cardHeader font-bold pb-4"> Rhubarb </p>
-              <p class="text-cardBody text-sm"> Secure digital asset transfers using smart contracts </p>
-            </div>
-          </div>
+          </a>
 
           <!--==========================
             Project Guardian
           ============================-->
-          <div class="flex flex-col w-[14.9375rem] h-[18.625rem]">
-            <div class="w-full h-[10.4375rem]">
-              <img
-                src="./assets/img/projectGuardianPreview.svg"
-                alt="Project Guardian Preview"
-                class="w-full h-full"
-              />
+          <a href="/work/projectGuardian.html">
+            <div class="flex flex-col w-[14.9375rem] h-[18.625rem]">
+              <div class="w-full h-[10.4375rem]">
+                <img
+                  src="./assets/img/projectGuardianPreview.png"
+                  alt="Project Guardian Preview"
+                  class="w-full h-full"
+                />
+              </div>
+              <div class="flex-1 bg-cardBg p-4">
+                <p class="text-cardHeader font-bold pb-4"> Project Guardian </p>
+                <p class="text-cardBody text-sm"> Demonstrating the applicability of DeFi to institutional finance </p>
+              </div>
             </div>
-            <div class="flex-1 bg-cardBg p-4">
-              <p class="text-cardHeader font-bold pb-4"> Project Guardian </p>
-              <p class="text-cardBody text-sm"> Demonstrating the applicability of DeFi to institutional finance </p>
-            </div>
-          </div>
+          </a>
 
           <!--==========================
             Monadic DNA
           ============================-->
-          <div class="flex flex-col w-[14.9375rem] h-[18.625rem]">
-            <div class="w-full h-[10.4375rem]">
-              <img
-                src="./assets/img/monadicDNAPreview.svg"
-                alt="Monadic DNA Preview"
-                class="w-full h-full"
-              />
+          <a href="/work/monadicDNA.html">
+            <div class="flex flex-col w-[14.9375rem] h-[18.625rem]">
+              <div class="w-full h-[10.4375rem]">
+                <img
+                  src="./assets/img/monadicDNAPreview.png"
+                  alt="Monadic DNA Preview"
+                  class="w-full h-full"
+                />
+              </div>
+              <div class="flex-1 bg-cardBg p-4">
+                <p class="text-cardHeader font-bold pb-4"> Monadic DNA </p>
+                <p class="text-cardBody text-sm"> Privacy-preserving personal genomics using FHE and ZK </p>
+              </div>
             </div>
-            <div class="flex-1 bg-cardBg p-4">
-              <p class="text-cardHeader font-bold pb-4"> Monadic DNA </p>
-              <p class="text-cardBody text-sm"> Privacy-preserving personal genomics using FHE and ZK </p>
-            </div>
-          </div>
+          </a>
 
         </div>
 
         <!--========= View All Button =========-->
-        <a href="/work.html" class="bg-btnBg font-archivo-black w-[12.25rem] flex justify-center mx-auto mt-[4.1875rem] p-6 text-lg"> View All  >>>>> </a>
+        <a href="/work.html" class="bg-btnBg font-archivo-black w-[12.25rem] flex justify-center mt-[4.1875rem] mx-auto xl:ml-[24.25rem] p-6 text-lg"> View All  >>>>> </a>
       </section>
 
       <!--==========================
         Services Section
       ============================-->
-      <section class="pt-[3.8125rem] pb-20 border-b border-borderBg">
+      <section class="pt-[3.8125rem]">
         <div class="flex flex-col lg:flex-row gap-4 xl:gap-[7.75rem] xl:pl-[8.25rem] pb-12">
           <ul role="list" class="sm:w-[28.5rem] space-y-3 list-disc list-inside marker:text-[0.625rem] ">
             <h3 class="sm:text-h3"> Services </h3>
@@ -177,7 +185,7 @@
           </ul>
         </div>
 
-        <p class="pt-12 md:px-[5.71875rem] xl:pl-[7.625rem] xl:pr-[150px] text-lg text-center border-t border-borderBg">
+        <p class="pt-12 pb-20 md:px-[5.71875rem] xl:pl-[7.625rem] xl:pr-[9.375rem] text-lg text-center border-y border-borderBg">
           Our team has substantial experience working across varied technological environments including; institutional finance, art institutions, biotechnology and machine learning.
           Get in touch with us to discuss any bespoke services.
         </p>
